@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import EmojiBoard from './emoji-board'
+import RecentEmojis from '../components/RecentEmojis'
 
 export const metadata: Metadata = {
   title: 'Emoji Copy & Paste – 3000+ Emojis, Arrows & Symbols | Free',
@@ -78,6 +79,9 @@ export default function Page() {
           3,000+ emojis, arrows, symbols and special characters. Click to copy, paste anywhere.
         </p>
       </div>
+
+      {/* Recently Used (persisted via localStorage) */}
+      <RecentEmojis />
 
       {/* Category Grid */}
       <section className="mb-10">
