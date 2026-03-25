@@ -64,26 +64,16 @@ export default function ChessPage() {
           {/* Chess Pieces Reference */}
           <section>
             <h2 className="text-2xl font-bold mb-6 text-gray-800">♔ Chess Piece Reference</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-4">
               {chessPieces.map((piece) => (
-                <div
-                  key={piece.name}
-                  className="bg-white rounded-lg shadow-sm p-6 border border-gray-200 hover:border-amber-300 transition-colors"
-                >
-                  <div className="text-4xl mb-2 text-center">{piece.symbol}</div>
-                  <h3 className="text-lg font-bold text-gray-900 text-center mb-1">{piece.name}</h3>
-                  <p className="text-gray-600 text-center text-sm mb-4">{piece.piece}</p>
-                  <button
-                    onClick={() => {
-                      navigator.clipboard.writeText(piece.symbol)
-                    }}
-                    className="w-full bg-amber-600 hover:bg-amber-700 text-white font-medium py-2 rounded transition-colors"
-                  >
-                    Copy Symbol
-                  </button>
+                <div key={piece.name} className="bg-white rounded-lg p-4 border border-gray-200 text-center">
+                  <div className="text-3xl mb-1">{piece.symbol}</div>
+                  <div className="text-sm font-bold text-gray-900">{piece.name}</div>
+                  <div className="text-xs text-gray-500">{piece.piece}</div>
                 </div>
               ))}
             </div>
+            <CopyGrid items={chessPieces.map(p => p.symbol)} />
           </section>
         </div>
 

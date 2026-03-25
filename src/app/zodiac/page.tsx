@@ -48,26 +48,16 @@ export default function ZodiacPage() {
           {/* Zodiac Signs with Dates */}
           <section>
             <h2 className="text-2xl font-bold mb-6 text-gray-800">♈ Zodiac Signs & Dates</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-4">
               {zodiacSigns.map((sign) => (
-                <div
-                  key={sign.name}
-                  className="bg-white rounded-lg shadow-sm p-6 border border-gray-200 hover:border-purple-300 transition-colors"
-                >
-                  <div className="text-4xl mb-2 text-center">{sign.symbol}</div>
-                  <h3 className="text-xl font-bold text-gray-900 text-center mb-2">{sign.name}</h3>
-                  <p className="text-gray-600 text-center text-sm">{sign.dates}</p>
-                  <button
-                    onClick={() => {
-                      navigator.clipboard.writeText(sign.symbol)
-                    }}
-                    className="mt-4 w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 rounded transition-colors"
-                  >
-                    Copy Symbol
-                  </button>
+                <div key={sign.name} className="bg-white rounded-lg p-4 border border-gray-200 text-center">
+                  <div className="text-3xl mb-1">{sign.symbol}</div>
+                  <div className="text-sm font-bold text-gray-900">{sign.name}</div>
+                  <div className="text-xs text-gray-500">{sign.dates}</div>
                 </div>
               ))}
             </div>
+            <CopyGrid items={zodiacSigns.map(s => s.symbol)} />
           </section>
         </div>
 
