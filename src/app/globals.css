@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  --bg: #fefcff;
+  --text: #2d2640;
+  --text-muted: #807894;
+  --accent: #7c5cbf;
+  --accent-light: #b49ee8;
+  --card-border: #e8ddf5;
+}
+
+body {
+  color: var(--text);
+  background: var(--bg);
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+::selection {
+  background: #d8ccf0;
+  color: var(--text);
+}
