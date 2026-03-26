@@ -3,12 +3,12 @@ import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Emoji Copy & Paste ‚Äì Arrows, Symbols & All Emojis ‚ú¶ Free',
-  description: 'Copy and paste emojis, arrows, symbols and special characters with one click. The most complete free emoji library ‚Äî arrows ‚Üë‚Üì‚Üê‚Üí, hearts ‚ù§Ô∏è, smileys üòä, hands üëç, and 1000+ more.',
+  title: 'Emoji Copy & Paste ??Arrows, Symbols & All Emojis ??Free',
+  description: 'Copy and paste emojis, arrows, symbols and special characters with one click. The most complete free emoji library ??arrows ?ë‚Üì?ê‚Üí, hearts ?§Ô∏è, smileys ?òä, hands ?ëç, and 1000+ more.',
   keywords: ['emoji copy paste', 'arrow symbols copy paste', 'emoji keyboard', 'copy emoji', 'text symbols', 'special characters', 'unicode symbols', 'arrow emoji', 'heart emoji'],
   metadataBase: new URL('https://emoji-copy.vercel.app'),
   openGraph: {
-    title: 'Emoji Copy & Paste ‚Äì Arrows, Symbols & All Emojis',
+    title: 'Emoji Copy & Paste ??Arrows, Symbols & All Emojis',
     description: 'One-click copy & paste for 1000+ emojis, arrows, and symbols. Free, fast, no app needed.',
     type: 'website',
     siteName: 'Emoji Copy',
@@ -21,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="hsjncRi9cl3tz3Otd6SJKurSt_V1bZ0AKO-bdWIGeHM" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-P08T3SZDQH" strategy="afterInteractive" />
@@ -32,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="border-b border-gray-200 bg-white">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <a href="/" className="text-xl font-bold" style={{ color: 'var(--accent)' }}>
-              üòä EmojiCopy
+              ?òä EmojiCopy
             </a>
             <span className="text-sm text-gray-400">Click to copy!</span>
           </div>
