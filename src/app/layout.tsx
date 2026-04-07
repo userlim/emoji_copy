@@ -3,13 +3,13 @@ import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Emoji Copy & Paste - Arrows, Symbols & All Emojis - Free',
-  description: 'Copy and paste emojis, arrows, symbols and special characters with one click. The most complete free emoji library with arrows, hearts, smileys, hands, and 1000+ more.',
+  title: 'Emoji Copy & Paste (Free, 2026) – 3000+ Emojis & Symbols',
+  description: 'Copy & paste 3000+ emojis with one click. Free 2026 emoji keyboard with arrows, hearts, stars, symbols, and special characters. No app needed.',
   keywords: ['emoji copy paste', 'arrow symbols copy paste', 'emoji keyboard', 'copy emoji', 'text symbols', 'special characters', 'unicode symbols', 'arrow emoji', 'heart emoji'],
   metadataBase: new URL('https://emoji-copy-app.vercel.app'),
   openGraph: {
-    title: 'Emoji Copy & Paste - Arrows, Symbols & All Emojis',
-    description: 'One-click copy & paste for 1000+ emojis, arrows, and symbols. Free, fast, no app needed.',
+    title: 'Emoji Copy & Paste (Free, 2026) – 3000+ Emojis & Symbols',
+    description: 'Copy & paste 3000+ emojis with one click. Free 2026 emoji keyboard with arrows, hearts, stars, symbols, and special characters. No app needed.',
     type: 'website',
     siteName: 'Emoji Copy',
   },
@@ -45,6 +45,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
         <footer className="border-t border-gray-200 py-4 text-center text-sm text-gray-400">
+          
+            <div className="flex flex-wrap justify-center gap-4 mb-3">
+              <span className="text-xs text-gray-400 font-semibold">Related Free Tools:</span>
+                <a href="https://meme-archive-self.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Meme Archive</a>
+                <a href="https://timezone-converter-ashy.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Timezone Converter</a>
+                <a href="https://meettime-tawny.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">MeetTime</a>
+                <a href="https://bmi-calculator-free.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">BMI Calculator</a>
+                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">UtiliCalc</a>
+            </div>
           <div className="flex flex-wrap justify-center gap-4 mb-3">
             <a href="/privacy-policy" className="text-blue-600 hover:text-blue-800 text-xs">
               Privacy Policy

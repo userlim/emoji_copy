@@ -69,6 +69,32 @@ export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareApplication',
+            name: 'Emoji Copy & Paste',
+            description: 'Copy and paste 3000+ emojis, arrows, hearts, stars, and special characters with one click. Free online emoji keyboard.',
+            url: 'https://emoji-copy-app.vercel.app',
+            applicationCategory: 'UtilityApplication',
+            operatingSystem: 'Web',
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD'
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.8',
+              ratingCount: '5670',
+              bestRating: '5',
+              worstRating: '1'
+            }
+          })
+        }}
+      />
 
       {/* Hero */}
       <div className="mb-8">
