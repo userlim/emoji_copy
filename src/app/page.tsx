@@ -3,8 +3,8 @@ import EmojiBoard from './emoji-board'
 import RecentEmojis from '../components/RecentEmojis'
 
 export const metadata: Metadata = {
-  title: 'Emoji Copy & Paste – 3000+ Emojis, Arrows & Symbols | Free',
-  description: 'Copy and paste 3000+ emojis, arrows ←→↑↓, hearts ❤️, stars ★, ※ reference marks, smileys 😊, and special characters with one click. Free online emoji & symbol keyboard.',
+  title: 'Emoji Copy & Paste (Free, 2026) – 3,000+ Emojis, One-Click Copy',
+  description: 'Copy any emoji with one click from 3,000+ options. Search by name, browse categories. Works on all devices — iPhone, Android, Windows, Mac. 100% free.',
 }
 
 const categories = [
