@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Emoji Copy',
   },
+    twitter: {
+    card: 'summary_large_image',
+    title: 'Emoji Copy & Paste — 3000+ Emojis One-Click Copy',
+    description: '3000+ Emojis One-Click Copy',
+  },
   robots: { index: true, follow: true },
   alternates: { canonical: '/' },
 }

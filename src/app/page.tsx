@@ -173,6 +173,32 @@ export default function Page() {
           <p className="px-4 pb-3">Over 370 arrow symbols — basic (←→↑↓), double (⇐⇒⇔), heavy (➤➜➡), harpoon, supplemental, and many more. The most comprehensive arrow collection online.</p>
         </details>
       </section>
+
+      {/* Extended Content Section for SEO depth */}
+      <section id="content-depth-section" className="mt-12 max-w-3xl mx-auto px-4">
+        <h2 className="text-2xl font-bold mb-6">Complete Guide</h2>
+        
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">What Are Emojis and How Do They Work?</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Emojis are digital pictographs standardized by the Unicode Consortium, an international organization that maintains text encoding standards. Each emoji has a unique Unicode code point — for example, the smiling face 😊 is U+1F60A. When you copy an emoji from our tool, you're copying this Unicode character, which is then rendered by the receiving device's operating system into its platform-specific visual style.` }} />
+            </div>
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">The History and Evolution of Emojis</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The first emoji set was created in 1999 by Shigetaka Kurita for the Japanese mobile carrier NTT DoCoMo. The original set contained just 176 12×12 pixel icons. In 2010, Unicode 6.0 officially incorporated 722 emojis, enabling cross-platform compatibility. As of Unicode 15.1 (2023), there are over 3,600 emojis including skin tone modifiers, gender variants, and flag sequences. New emojis are proposed and approved annually through the Unicode Consortium's review process.` }} />
+            </div>
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">How Emojis Display Differently Across Platforms</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The same Unicode emoji can look quite different on Apple, Google, Samsung, Microsoft, and other platforms. Each company designs their own emoji artwork while following Unicode's general description. For example, the "pistol" emoji (🔫) was changed from a realistic firearm to a water gun across all major platforms between 2016-2018. Our tool displays emojis in your browser's default style, but they may look different when pasted into other apps.` }} />
+            </div>
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">Using Emojis Effectively in Communication</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Research from the University of Cambridge found that emoji use in digital communication increases perceived warmth and emotional connection. In marketing, emails with emojis in subject lines see 56% higher open rates. However, overuse or inappropriate emoji placement can reduce perceived professionalism. Best practices include using emojis to complement rather than replace text, being mindful of cultural differences in emoji interpretation, and limiting emoji use in formal contexts.` }} />
+            </div>
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">Emoji Accessibility and Inclusion</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The Unicode Consortium has made significant efforts toward emoji inclusivity. Skin tone modifiers (introduced in 2015) allow users to select from five skin tones plus the default yellow. Gender-neutral emoji options were added in 2019. Disability-related emojis (wheelchair, prosthetic limbs, hearing aids) were introduced in 2019. Mixed skin-tone couple emojis were added in 2021. These additions reflect the ongoing effort to make emoji communication more representative and inclusive.` }} />
+            </div>
+      </section>
     </>
   )
 }
