@@ -37,14 +37,14 @@ export default function RecentEmojis() {
         </div>
       )}
       <div
-        className="flex flex-wrap gap-1.5 p-4 rounded-2xl bg-white"
+        className="flex flex-wrap gap-1.5 p-4 rounded-2xl bg-white/[0.03]"
         style={{ border: '1.5px solid var(--card-border)' }}
       >
         {recent.map((sym, i) => (
           <button
             key={`recent-${i}`}
             onClick={() => handleCopy(sym)}
-            className="w-11 h-11 flex items-center justify-center text-2xl rounded-lg hover:bg-gray-100 active:scale-90 transition-all cursor-pointer"
+            className="w-11 h-11 flex items-center justify-center text-2xl rounded-lg hover:bg-white/[0.04] active:scale-90 transition-all cursor-pointer"
             title={`Copy ${sym}`}
           >
             {sym}

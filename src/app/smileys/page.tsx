@@ -40,92 +40,92 @@ export default function SmileysPage() {
       <main className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-12">
           <h1 className="text-5xl font-bold text-blue-600 mb-4">Smiley Face Emojis & Expressions</h1>
-          <p className="text-xl text-gray-700">Copy 200+ smiley face emojis covering every emotion, expression, and mood. Happy, sad, angry, shocked, and more!</p>
+          <p className="text-xl text-gray-300">Copy 200+ smiley face emojis covering every emotion, expression, and mood. Happy, sad, angry, shocked, and more!</p>
         </header>
 
         {/* Happy Faces Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">😀 Happy Faces</h2>
+            <h2 className="text-3xl font-bold text-gray-100">😀 Happy Faces</h2>
             <span className="text-sm bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full">31 emojis</span>
           </div>
-          <p className="text-gray-600 mb-6">Cheerful, happy, and positive face expressions for good news and cheerful messages</p>
+          <p className="text-gray-400 mb-6">Cheerful, happy, and positive face expressions for good news and cheerful messages</p>
           <CopyGrid items={happyFaces} />
         </section>
 
         {/* Neutral & Sad Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">😐 Neutral & Sad Faces</h2>
-            <span className="text-sm bg-gray-100 text-gray-700 px-3 py-1 rounded-full">18 emojis</span>
+            <h2 className="text-3xl font-bold text-gray-100">😐 Neutral & Sad Faces</h2>
+            <span className="text-sm bg-gray-100 text-gray-300 px-3 py-1 rounded-full">18 emojis</span>
           </div>
-          <p className="text-gray-600 mb-6">Neutral, indifferent, sad, and melancholic expressions</p>
+          <p className="text-gray-400 mb-6">Neutral, indifferent, sad, and melancholic expressions</p>
           <CopyGrid items={neutralSad} />
         </section>
 
         {/* Sick & Weird Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">🥵 Sick, Weird & Cool Faces</h2>
+            <h2 className="text-3xl font-bold text-gray-100">🥵 Sick, Weird & Cool Faces</h2>
             <span className="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full">16 emojis</span>
           </div>
-          <p className="text-gray-600 mb-6">Sick, dizzy, crazy, cool, and unusual face expressions</p>
+          <p className="text-gray-400 mb-6">Sick, dizzy, crazy, cool, and unusual face expressions</p>
           <CopyGrid items={sickWeird} />
         </section>
 
         {/* Worried & Scared Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">😰 Worried & Scared Faces</h2>
+            <h2 className="text-3xl font-bold text-gray-100">😰 Worried & Scared Faces</h2>
             <span className="text-sm bg-red-100 text-red-700 px-3 py-1 rounded-full">26 emojis</span>
           </div>
-          <p className="text-gray-600 mb-6">Worried, anxious, scared, and distressed expressions</p>
+          <p className="text-gray-400 mb-6">Worried, anxious, scared, and distressed expressions</p>
           <CopyGrid items={worriedScared} />
         </section>
 
         {/* Angry & Evil Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">😡 Angry & Evil Faces</h2>
+            <h2 className="text-3xl font-bold text-gray-100">😡 Angry & Evil Faces</h2>
             <span className="text-sm bg-red-100 text-red-700 px-3 py-1 rounded-full">16 emojis</span>
           </div>
-          <p className="text-gray-600 mb-6">Angry, furious, evil, and dark expressions</p>
+          <p className="text-gray-400 mb-6">Angry, furious, evil, and dark expressions</p>
           <CopyGrid items={angryEvil} />
         </section>
 
         {/* Cat Faces Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">😺 Cat Faces</h2>
+            <h2 className="text-3xl font-bold text-gray-100">😺 Cat Faces</h2>
             <span className="text-sm bg-amber-100 text-amber-700 px-3 py-1 rounded-full">9 emojis</span>
           </div>
-          <p className="text-gray-600 mb-6">Cute cat face expressions with various emotions</p>
+          <p className="text-gray-400 mb-6">Cute cat face expressions with various emotions</p>
           <CopyGrid items={catFaces} />
         </section>
 
         {/* Monkey Faces Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">🙈 Monkey Faces</h2>
+            <h2 className="text-3xl font-bold text-gray-100">🙈 Monkey Faces</h2>
             <span className="text-sm bg-amber-100 text-amber-700 px-3 py-1 rounded-full">3 emojis</span>
           </div>
-          <p className="text-gray-600 mb-6">Playful monkey expressions and variations</p>
+          <p className="text-gray-400 mb-6">Playful monkey expressions and variations</p>
           <CopyGrid items={monkeyFaces} />
         </section>
 
         {/* All Smileys Grid */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">😀 All 200+ Smiley Emojis</h2>
+            <h2 className="text-3xl font-bold text-gray-100">😀 All 200+ Smiley Emojis</h2>
           </div>
-          <p className="text-gray-600 mb-6">Complete collection of all smiley face emojis in one place</p>
+          <p className="text-gray-400 mb-6">Complete collection of all smiley face emojis in one place</p>
           <CopyGrid items={allSmileys} />
         </section>
 
         {/* SEO Content */}
-        <section className="mt-20 bg-gray-50 p-8 rounded-lg">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">About Smiley Face Emojis</h2>
-          <div className="text-gray-700 space-y-4">
+        <section className="mt-20 bg-white/[0.02] p-8 rounded-lg">
+          <h2 className="text-2xl font-bold text-gray-100 mb-4">About Smiley Face Emojis</h2>
+          <div className="text-gray-300 space-y-4">
             <p>
               Smiley face emojis are the most commonly used emojis for expressing emotions and moods in digital communication. Our collection includes 200+ smiley emojis covering every possible emotion, expression, and mood you might want to convey.
             </p>

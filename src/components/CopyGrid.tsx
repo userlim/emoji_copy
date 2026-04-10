@@ -45,7 +45,7 @@ export default function CopyGrid({ items, columns }: CopyGridProps) {
           <div className="flex flex-wrap gap-1">
             {recent.slice(0, 20).map((s, i) => (
               <button key={i} onClick={() => handleCopy(s)}
-                className="w-10 h-10 flex items-center justify-center text-xl rounded-lg bg-gray-50 hover:bg-gray-100 active:scale-90 transition-all">{s}</button>
+                className="w-10 h-10 flex items-center justify-center text-xl rounded-lg bg-white/[0.02] hover:bg-white/[0.04] active:scale-90 transition-all">{s}</button>
             ))}
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function CopyGrid({ items, columns }: CopyGridProps) {
       <div className="grid gap-1" style={{ gridTemplateColumns: gridCols }}>
         {items.map((sym, i) => (
           <button key={i} onClick={() => handleCopy(sym)}
-            className={`flex items-center justify-center rounded-lg hover:bg-gray-100 active:scale-90 transition-all cursor-pointer border border-transparent hover:border-gray-200 ${
+            className={`flex items-center justify-center rounded-lg hover:bg-white/[0.04] active:scale-90 transition-all cursor-pointer border border-transparent hover:border-white/10 ${
               isWide ? 'py-2 px-2 text-sm' : 'aspect-square text-2xl'
             }`}
             title={`Copy ${sym}`}

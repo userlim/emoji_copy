@@ -5,11 +5,15 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Emoji Copy & Paste (Free, 2026) – 3000+ Emojis & Symbols',
   description: 'Copy & paste 3000+ emojis with one click. Free 2026 emoji keyboard with arrows, hearts, stars, symbols, and special characters. No app needed.',
+  keywords:
+    'emoji copy and paste, emoji keyboard, copy emoji, emoji list, heart emoji, smiley face emoji, emoji symbols, cute emoji, emoji meanings, funny emoji, emoji for instagram, text emoji, emoji art, new emoji 2026, emoji search',
   keywords: ['emoji copy paste', 'arrow symbols copy paste', 'emoji keyboard', 'copy emoji', 'text symbols', 'special characters', 'unicode symbols', 'arrow emoji', 'heart emoji'],
   metadataBase: new URL('https://emoji-copy-app.vercel.app'),
   openGraph: {
     title: 'Emoji Copy & Paste (Free, 2026) – 3000+ Emojis & Symbols',
     description: 'Copy & paste 3000+ emojis with one click. Free 2026 emoji keyboard with arrows, hearts, stars, symbols, and special characters. No app needed.',
+  keywords:
+    'emoji copy and paste, emoji keyboard, copy emoji, emoji list, heart emoji, smiley face emoji, emoji symbols, cute emoji, emoji meanings, funny emoji, emoji for instagram, text emoji, emoji art, new emoji 2026, emoji search',
     type: 'website',
     siteName: 'Emoji Copy',
   },
@@ -17,9 +21,18 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Emoji Copy & Paste — 3000+ Emojis One-Click Copy',
     description: '3000+ Emojis One-Click Copy',
+  keywords:
+    'emoji copy and paste, emoji keyboard, copy emoji, emoji list, heart emoji, smiley face emoji, emoji symbols, cute emoji, emoji meanings, funny emoji, emoji for instagram, text emoji, emoji art, new emoji 2026, emoji search',
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: '/' },
+  alternates: {
+    canonical: 'https://emoji-copy-app.vercel.app',
+    languages: {
+      'en': 'https://emoji-copy-app.vercel.app',
+      'x-default': 'https://emoji-copy-app.vercel.app',
+    },
+  },
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -36,7 +49,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script id="gtag-init" strategy="afterInteractive">
           {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-P04TH8XJJ9');`}
         </Script>
-      </head>
+              {/* BreadcrumbList Schema */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://emoji-copy-app.vercel.app"}, {"@type": "ListItem", "position": 2, "name": "Emoji Copy & Paste", "item": "https://emoji-copy-app.vercel.app"}]})
+        }} />
+        {/* Organization & WebSite Schema */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebSite", "name": "Emoji Copy & Paste", "url": "https://emoji-copy-app.vercel.app", "publisher": {"@type": "Organization", "name": "UtiliCalc Tools", "url": "https://utilicalc.vercel.app", "logo": {"@type": "ImageObject", "url": "https://emoji-copy-app.vercel.app/favicon.svg"}}, "potentialAction": {"@type": "SearchAction", "target": "https://emoji-copy-app.vercel.app/?q={search_term_string}", "query-input": "required name=search_term_string"}})
+        }} />
+        {/* Preconnect & DNS-Prefetch Hints */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+        <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+        {/* Speakable Schema */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".keyword-seo-section p"]}})
+        }} />
+</head>
       <body className="min-h-screen flex flex-col">
         <header className="border-b border-gray-200 bg-white">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -49,21 +79,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1 max-w-6xl mx-auto px-4 py-6 w-full">
           {children}
         </main>
-        <footer className="border-t border-gray-200 py-4 text-center text-sm text-gray-400">
+        <footer className="border-t border-white/5 py-6 text-center text-sm text-gray-500 bg-black/20 backdrop-blur-sm">
           
             <div className="flex flex-wrap justify-center gap-4 mb-3">
-              <span className="text-xs text-gray-400 font-semibold">Related Free Tools:</span>
-                <a href="https://meme-archive-self.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Meme Archive Browser</a>
-                <a href="https://timezone-converter-ashy.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">World Timezone Converter</a>
-                <a href="https://meettime-tawny.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Meeting Time Zone Scheduler</a>
-                <a href="https://bmi-calculator-free.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">Free BMI Calculator</a>
-                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-xs">UtiliCalc All-in-One Tools</a>
+              <span className="text-xs text-gray-500 font-semibold uppercase tracking-wider">Related Free Tools:</span>
+                <a href="https://meme-archive-self.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Meme Archive Browser</a>
+                <a href="https://timezone-converter-ashy.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">World Timezone Converter</a>
+                <a href="https://meettime-tawny.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Meeting Time Zone Scheduler</a>
+                <a href="https://bmi-calculator-free.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">Free BMI Calculator</a>
+                <a href="https://utilicalc.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs">UtiliCalc All-in-One Tools</a>
             </div>
           <div className="flex flex-wrap justify-center gap-4 mb-3">
-            <a href="/privacy-policy" className="text-blue-600 hover:text-blue-800 text-xs">
+            <a href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-xs">
               Privacy Policy
             </a>
-            <a href="/terms" className="text-blue-600 hover:text-blue-800 text-xs">
+            <a href="/terms" className="text-gray-400 hover:text-white transition-colors text-xs">
               Terms of Service
             </a>
           </div>

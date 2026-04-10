@@ -5,6 +5,10 @@ import RecentEmojis from '../components/RecentEmojis'
 export const metadata: Metadata = {
   title: 'Emoji Copy & Paste (Free, 2026) – 3,000+ Emojis, One-Click Copy',
   description: 'Copy any emoji with one click from 3,000+ options. Search by name, browse categories. Works on all devices — iPhone, Android, Windows, Mac. 100% free.',
+  other: {
+    'article:published_time': '2025-01-15T00:00:00Z',
+    'article:modified_time': '2026-04-10T00:00:00Z',
+  },
 }
 
 const categories = [
@@ -117,10 +121,10 @@ export default function Page() {
             <a
               key={cat.href}
               href={cat.href}
-              className="flex items-center gap-3 p-3 rounded-xl bg-white hover:bg-gray-50 transition-all group"
+              className="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.02] transition-all group"
               style={{ border: '1.5px solid var(--card-border)' }}
             >
-              <span className="text-2xl w-10 h-10 flex items-center justify-center rounded-lg bg-gray-50 group-hover:scale-110 transition-transform">
+              <span className="text-2xl w-10 h-10 flex items-center justify-center rounded-lg bg-white/[0.02] group-hover:scale-110 transition-transform">
                 {cat.icon}
               </span>
               <div className="flex-1 min-w-0">
@@ -142,8 +146,8 @@ export default function Page() {
       </section>
 
       {/* SEO Content */}
-      <section className="mt-8 space-y-4 text-sm text-gray-600 max-w-3xl">
-        <h2 className="text-lg font-bold text-gray-800">About EmojiCopy</h2>
+      <section className="mt-8 space-y-4 text-sm text-gray-400 max-w-3xl">
+        <h2 className="text-lg font-bold text-gray-200">About EmojiCopy</h2>
         <p>
           EmojiCopy is the fastest and most complete emoji and symbol copy-paste tool on the web.
           With 3,000+ items across 23 categories, you can find any emoji, arrow, special character,
@@ -156,20 +160,20 @@ export default function Page() {
           and smiley faces (😀 😂 🥰). We also offer math symbols, currency signs, box drawing characters,
           music notes, brackets, and kaomoji text faces.
         </p>
-        <details className="border border-gray-200 rounded-lg">
-          <summary className="px-4 py-3 cursor-pointer font-semibold text-gray-700">How do I copy an emoji?</summary>
+        <details className="border border-white/10 rounded-lg">
+          <summary className="px-4 py-3 cursor-pointer font-semibold text-gray-300">How do I copy an emoji?</summary>
           <p className="px-4 pb-3">Click on any emoji or symbol and it gets copied automatically. Then paste with Ctrl+V (Windows) or Cmd+V (Mac). It works in any text field.</p>
         </details>
-        <details className="border border-gray-200 rounded-lg">
-          <summary className="px-4 py-3 cursor-pointer font-semibold text-gray-700">Do these work on all platforms?</summary>
+        <details className="border border-white/10 rounded-lg">
+          <summary className="px-4 py-3 cursor-pointer font-semibold text-gray-300">Do these work on all platforms?</summary>
           <p className="px-4 pb-3">Yes — Instagram, Twitter/X, Facebook, TikTok, WhatsApp, Discord, Slack, Gmail, Google Docs, Microsoft Word, and everywhere else that supports text.</p>
         </details>
-        <details className="border border-gray-200 rounded-lg">
-          <summary className="px-4 py-3 cursor-pointer font-semibold text-gray-700">What is the ※ (reference mark) symbol?</summary>
+        <details className="border border-white/10 rounded-lg">
+          <summary className="px-4 py-3 cursor-pointer font-semibold text-gray-300">What is the ※ (reference mark) symbol?</summary>
           <p className="px-4 pb-3">The ※ symbol is called &quot;당구장 기호&quot; in Korean and &quot;kome&quot; in Japanese. It marks footnotes and special notes. Visit our dedicated Reference Marks page for 200+ similar symbols.</p>
         </details>
-        <details className="border border-gray-200 rounded-lg">
-          <summary className="px-4 py-3 cursor-pointer font-semibold text-gray-700">How many arrows do you have?</summary>
+        <details className="border border-white/10 rounded-lg">
+          <summary className="px-4 py-3 cursor-pointer font-semibold text-gray-300">How many arrows do you have?</summary>
           <p className="px-4 pb-3">Over 370 arrow symbols — basic (←→↑↓), double (⇐⇒⇔), heavy (➤➜➡), harpoon, supplemental, and many more. The most comprehensive arrow collection online.</p>
         </details>
       </section>
@@ -180,25 +184,38 @@ export default function Page() {
         
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">What Are Emojis and How Do They Work?</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Emojis are digital pictographs standardized by the Unicode Consortium, an international organization that maintains text encoding standards. Each emoji has a unique Unicode code point — for example, the smiling face 😊 is U+1F60A. When you copy an emoji from our tool, you're copying this Unicode character, which is then rendered by the receiving device's operating system into its platform-specific visual style.` }} />
+              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Emojis are digital pictographs standardized by the Unicode Consortium, an international organization that maintains text encoding standards. Each emoji has a unique Unicode code point — for example, the smiling face 😊 is U+1F60A. When you copy an emoji from our tool, you're copying this Unicode character, which is then rendered by the receiving device's operating system into its platform-specific visual style.` }} />
             </div>
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">The History and Evolution of Emojis</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The first emoji set was created in 1999 by Shigetaka Kurita for the Japanese mobile carrier NTT DoCoMo. The original set contained just 176 12×12 pixel icons. In 2010, Unicode 6.0 officially incorporated 722 emojis, enabling cross-platform compatibility. As of Unicode 15.1 (2023), there are over 3,600 emojis including skin tone modifiers, gender variants, and flag sequences. New emojis are proposed and approved annually through the Unicode Consortium's review process.` }} />
+              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The first emoji set was created in 1999 by Shigetaka Kurita for the Japanese mobile carrier NTT DoCoMo. The original set contained just 176 12×12 pixel icons. In 2010, Unicode 6.0 officially incorporated 722 emojis, enabling cross-platform compatibility. As of Unicode 15.1 (2023), there are over 3,600 emojis including skin tone modifiers, gender variants, and flag sequences. New emojis are proposed and approved annually through the Unicode Consortium's review process.` }} />
             </div>
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">How Emojis Display Differently Across Platforms</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The same Unicode emoji can look quite different on Apple, Google, Samsung, Microsoft, and other platforms. Each company designs their own emoji artwork while following Unicode's general description. For example, the "pistol" emoji (🔫) was changed from a realistic firearm to a water gun across all major platforms between 2016-2018. Our tool displays emojis in your browser's default style, but they may look different when pasted into other apps.` }} />
+              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The same Unicode emoji can look quite different on Apple, Google, Samsung, Microsoft, and other platforms. Each company designs their own emoji artwork while following Unicode's general description. For example, the "pistol" emoji (🔫) was changed from a realistic firearm to a water gun across all major platforms between 2016-2018. Our tool displays emojis in your browser's default style, but they may look different when pasted into other apps.` }} />
             </div>
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">Using Emojis Effectively in Communication</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Research from the University of Cambridge found that emoji use in digital communication increases perceived warmth and emotional connection. In marketing, emails with emojis in subject lines see 56% higher open rates. However, overuse or inappropriate emoji placement can reduce perceived professionalism. Best practices include using emojis to complement rather than replace text, being mindful of cultural differences in emoji interpretation, and limiting emoji use in formal contexts.` }} />
+              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Research from the University of Cambridge found that emoji use in digital communication increases perceived warmth and emotional connection. In marketing, emails with emojis in subject lines see 56% higher open rates. However, overuse or inappropriate emoji placement can reduce perceived professionalism. Best practices include using emojis to complement rather than replace text, being mindful of cultural differences in emoji interpretation, and limiting emoji use in formal contexts.` }} />
             </div>
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">Emoji Accessibility and Inclusion</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The Unicode Consortium has made significant efforts toward emoji inclusivity. Skin tone modifiers (introduced in 2015) allow users to select from five skin tones plus the default yellow. Gender-neutral emoji options were added in 2019. Disability-related emojis (wheelchair, prosthetic limbs, hearing aids) were introduced in 2019. Mixed skin-tone couple emojis were added in 2021. These additions reflect the ongoing effort to make emoji communication more representative and inclusive.` }} />
+              <p className="text-gray-400 dark:text-gray-400 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The Unicode Consortium has made significant efforts toward emoji inclusivity. Skin tone modifiers (introduced in 2015) allow users to select from five skin tones plus the default yellow. Gender-neutral emoji options were added in 2019. Disability-related emojis (wheelchair, prosthetic limbs, hearing aids) were introduced in 2019. Mixed skin-tone couple emojis were added in 2021. These additions reflect the ongoing effort to make emoji communication more representative and inclusive.` }} />
             </div>
       </section>
-    </>
+    
+      {/* Keyword-Optimized Content */}
+      <section id="keyword-seo-section" className="mt-8 max-w-3xl mx-auto px-4">
+        <p className="text-sm text-gray-400 leading-relaxed">
+          Copy and paste 3,000+ emojis with one click. Browse heart emojis, smiley face emojis, cute emojis, and the latest new emoji for 2026. Perfect emoji keyboard for Instagram, social media, and messaging. Search, find, and copy any emoji symbol instantly.
+        </p>
+<div className="mt-3 flex flex-wrap gap-2">
+          <a href="https://meme-archive-self.vercel.app" className="text-xs text-blue-400 hover:underline">Meme Archive →</a>
+          <a href="https://meettime-tawny.vercel.app" className="text-xs text-blue-400 hover:underline">MeetTime →</a>
+          <a href="https://timezone-converter-ashy.vercel.app" className="text-xs text-blue-400 hover:underline">Timezone Converter →</a>
+        </div>
+
+      </section>
+      </>
   )
 }

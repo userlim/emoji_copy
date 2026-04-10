@@ -28,34 +28,34 @@ export default function HandsPage() {
 
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12">
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">Hand Emoji & Gestures</h1>
-          <p className="text-xl text-gray-700">Copy and paste hand gestures, fingers, pointing, and more. Easy to use - just click any emoji to copy it to your clipboard.</p>
+          <h1 className="text-5xl font-bold text-gray-100 mb-4">Hand Emoji & Gestures</h1>
+          <p className="text-xl text-gray-300">Copy and paste hand gestures, fingers, pointing, and more. Easy to use - just click any emoji to copy it to your clipboard.</p>
         </div>
 
         <div className="space-y-12">
           {Object.entries(handEmojis).map(([category, emojis]) => (
-            <div key={category} className="bg-white rounded-lg shadow-md p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">{category}</h2>
+            <div key={category} className="bg-white/[0.03] rounded-lg shadow-md p-8">
+              <h2 className="text-2xl font-bold text-gray-100 mb-6">{category}</h2>
               <CopyGrid items={emojis} />
             </div>
           ))}
         </div>
 
         {/* FAQ Section */}
-        <div className="mt-16 bg-white rounded-lg shadow-md p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div className="mt-16 bg-white/[0.03] rounded-lg shadow-md p-8">
+          <h2 className="text-2xl font-bold text-gray-100 mb-6">Frequently Asked Questions</h2>
           <div className="space-y-6">
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">How do I copy a hand emoji?</h3>
-              <p className="text-gray-700">Simply click on any hand emoji in the grid above. It will be automatically copied to your clipboard.</p>
+              <h3 className="text-lg font-semibold text-gray-100 mb-2">How do I copy a hand emoji?</h3>
+              <p className="text-gray-300">Simply click on any hand emoji in the grid above. It will be automatically copied to your clipboard.</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Can I use hand emojis in all apps?</h3>
-              <p className="text-gray-700">Yes, hand emojis are widely supported across messaging apps, social media, email, and most platforms. Skin tone variations may display differently depending on the device.</p>
+              <h3 className="text-lg font-semibold text-gray-100 mb-2">Can I use hand emojis in all apps?</h3>
+              <p className="text-gray-300">Yes, hand emojis are widely supported across messaging apps, social media, email, and most platforms. Skin tone variations may display differently depending on the device.</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">What's the difference between hand gestures?</h3>
-              <p className="text-gray-700">Hand emojis are grouped by gesture type: waving hands for greetings, pointing fingers for directions, thumbs for approval, and clapping for appreciation.</p>
+              <h3 className="text-lg font-semibold text-gray-100 mb-2">What's the difference between hand gestures?</h3>
+              <p className="text-gray-300">Hand emojis are grouped by gesture type: waving hands for greetings, pointing fingers for directions, thumbs for approval, and clapping for appreciation.</p>
             </div>
           </div>
         </div>

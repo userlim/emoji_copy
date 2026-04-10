@@ -215,13 +215,13 @@ export default function EmojiBoard() {
           value={search}
           onChange={e => setSearch(e.target.value)}
           placeholder="Search emojis... (paste an emoji to find similar)"
-          className="w-full px-4 py-3 text-base rounded-xl bg-white focus:outline-none"
+          className="w-full px-4 py-3 text-base rounded-xl bg-white/[0.03] focus:outline-none"
           style={{ border: '1.5px solid #ddd4e8' }}
         />
         {search && (
           <button
             onClick={() => setSearch('')}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 text-lg"
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-400 text-lg"
           >
             ✕
           </button>
@@ -237,7 +237,7 @@ export default function EmojiBoard() {
               className={`shrink-0 px-3 py-1.5 rounded-full text-sm font-semibold transition-colors ${
                 activeCategory === 'recent'
                   ? 'text-white'
-                  : 'text-gray-600 bg-gray-100 hover:bg-gray-200'
+                  : 'text-gray-400 bg-white/[0.04] hover:bg-gray-200'
               }`}
               style={activeCategory === 'recent' ? { background: 'var(--accent)' } : {}}
             >
@@ -251,7 +251,7 @@ export default function EmojiBoard() {
               className={`shrink-0 px-3 py-1.5 rounded-full text-sm font-semibold transition-colors ${
                 activeCategory === cat.id
                   ? 'text-white'
-                  : 'text-gray-600 bg-gray-100 hover:bg-gray-200'
+                  : 'text-gray-400 bg-white/[0.04] hover:bg-gray-200'
               }`}
               style={activeCategory === cat.id ? { background: 'var(--accent)' } : {}}
             >
@@ -277,7 +277,7 @@ export default function EmojiBoard() {
               <button
                 key={`recent-${i}`}
                 onClick={() => handleCopy(emoji)}
-                className="aspect-square flex items-center justify-center text-2xl rounded-lg hover:bg-gray-100 active:scale-90 transition-all cursor-pointer"
+                className="aspect-square flex items-center justify-center text-2xl rounded-lg hover:bg-white/[0.04] active:scale-90 transition-all cursor-pointer"
                 title={`Copy ${emoji}`}
               >
                 {emoji}
@@ -307,7 +307,7 @@ export default function EmojiBoard() {
               <button
                 key={`${cat.id}-${i}`}
                 onClick={() => handleCopy(emoji)}
-                className={`flex items-center justify-center rounded-lg hover:bg-gray-100 active:scale-90 transition-all cursor-pointer ${
+                className={`flex items-center justify-center rounded-lg hover:bg-white/[0.04] active:scale-90 transition-all cursor-pointer ${
                   cat.id === 'text-faces'
                     ? 'text-sm py-2 px-2'
                     : 'aspect-square text-2xl'

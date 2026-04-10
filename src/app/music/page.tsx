@@ -28,73 +28,73 @@ export default function MusicPage() {
       <main className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-12">
           <h1 className="text-5xl font-bold text-purple-600 mb-4">Music Symbols & Instruments</h1>
-          <p className="text-xl text-gray-700">Copy 50+ music symbols including musical notes ♪ ♫, staff notation ♯ ♭, instruments 🎸 🎹, and audio controls. Perfect for music projects, documents, and social media.</p>
+          <p className="text-xl text-gray-300">Copy 50+ music symbols including musical notes ♪ ♫, staff notation ♯ ♭, instruments 🎸 🎹, and audio controls. Perfect for music projects, documents, and social media.</p>
         </header>
 
         {/* Musical Notes Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">♩ ♪ ♫ Musical Notes</h2>
+            <h2 className="text-3xl font-bold text-gray-100">♩ ♪ ♫ Musical Notes</h2>
             <span className="text-sm bg-purple-100 text-purple-700 px-3 py-1 rounded-full">{musicalNotes.length} symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">Musical note symbols and staff notation including accidentals and clefs</p>
+          <p className="text-gray-400 mb-6">Musical note symbols and staff notation including accidentals and clefs</p>
           <CopyGrid items={musicalNotes} />
         </section>
 
         {/* Note Values Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">𝅗𝅥 𝅘𝅥 Note Values</h2>
+            <h2 className="text-3xl font-bold text-gray-100">𝅗𝅥 𝅘𝅥 Note Values</h2>
             <span className="text-sm bg-pink-100 text-pink-700 px-3 py-1 rounded-full">{noteValues.length} symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">Different musical note values from whole notes to sixteenth notes</p>
+          <p className="text-gray-400 mb-6">Different musical note values from whole notes to sixteenth notes</p>
           <CopyGrid items={noteValues} />
         </section>
 
         {/* Music Rests Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">𝄀 𝄁 𝄂 Rests</h2>
+            <h2 className="text-3xl font-bold text-gray-100">𝄀 𝄁 𝄂 Rests</h2>
             <span className="text-sm bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full">{musicRests.length} symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">Rest symbols representing silence in musical notation</p>
+          <p className="text-gray-400 mb-6">Rest symbols representing silence in musical notation</p>
           <CopyGrid items={musicRests} />
         </section>
 
         {/* Instrument Emoji Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">🎸 🎹 🎺 Instruments</h2>
+            <h2 className="text-3xl font-bold text-gray-100">🎸 🎹 🎺 Instruments</h2>
             <span className="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">{instrumentEmoji.length} symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">Musical instrument emoji for all major instrument types</p>
+          <p className="text-gray-400 mb-6">Musical instrument emoji for all major instrument types</p>
           <CopyGrid items={instrumentEmoji} />
         </section>
 
         {/* Sound & Audio Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">🔊 🔉 🔈 Sound & Volume</h2>
+            <h2 className="text-3xl font-bold text-gray-100">🔊 🔉 🔈 Sound & Volume</h2>
             <span className="text-sm bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full">{soundSymbols.length} symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">Speaker and sound level indicators for audio representation</p>
+          <p className="text-gray-400 mb-6">Speaker and sound level indicators for audio representation</p>
           <CopyGrid items={soundSymbols} />
         </section>
 
         {/* Media Controls Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">⏮ ⏯ ⏹ Media Controls</h2>
+            <h2 className="text-3xl font-bold text-gray-100">⏮ ⏯ ⏹ Media Controls</h2>
             <span className="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full">{mediaControls.length} symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">Playback control symbols for media players and interfaces</p>
+          <p className="text-gray-400 mb-6">Playback control symbols for media players and interfaces</p>
           <CopyGrid items={mediaControls} />
         </section>
 
         {/* SEO Content */}
         <section className="mt-20 bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-lg">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">About Music Symbols</h2>
-          <div className="text-gray-700 space-y-4">
+          <h2 className="text-2xl font-bold text-gray-100 mb-6">About Music Symbols</h2>
+          <div className="text-gray-300 space-y-4">
             <p>
               Music symbols are specialized Unicode characters used in musical notation, composition, and audio applications. Our collection of 50+ music symbols covers musical notes ♪ ♫, staff notation symbols ♯ ♭ ♮, instrument emoji, sound controls, and media playback buttons.
             </p>
@@ -112,8 +112,8 @@ export default function MusicPage() {
 
         {/* Quick Tips Section */}
         <section className="mt-12 bg-gradient-to-r from-pink-50 to-purple-50 p-8 rounded-lg">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Tips for Using Music Symbols</h2>
-          <ul className="text-gray-700 space-y-3">
+          <h2 className="text-2xl font-bold text-gray-100 mb-4">Tips for Using Music Symbols</h2>
+          <ul className="text-gray-300 space-y-3">
             <li className="flex gap-3">
               <span className="text-purple-600 font-bold">♪</span>
               <span><strong>Copy with one click:</strong> Click any music symbol to instantly copy it to your clipboard</span>

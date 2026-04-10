@@ -28,73 +28,73 @@ export default function LinesPage() {
       <main className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-12">
           <h1 className="text-5xl font-bold text-slate-600 mb-4">Line Symbols & Box Drawing Characters</h1>
-          <p className="text-xl text-gray-700">Copy 60+ line and box drawing symbols including horizontal lines ─, vertical lines │, corners ┌ ┐ └ ┘, and decorative dashes. Perfect for ASCII art, borders, dividers, and text decoration.</p>
+          <p className="text-xl text-gray-300">Copy 60+ line and box drawing symbols including horizontal lines ─, vertical lines │, corners ┌ ┐ └ ┘, and decorative dashes. Perfect for ASCII art, borders, dividers, and text decoration.</p>
         </header>
 
         {/* Basic Lines Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">─ │ ┌ Basic Box Drawing</h2>
+            <h2 className="text-3xl font-bold text-gray-100">─ │ ┌ Basic Box Drawing</h2>
             <span className="text-sm bg-slate-100 text-slate-700 px-3 py-1 rounded-full">{basicLines.length} symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">Basic single-line box drawing characters for borders and grids</p>
+          <p className="text-gray-400 mb-6">Basic single-line box drawing characters for borders and grids</p>
           <CopyGrid items={basicLines} />
         </section>
 
         {/* Double Lines Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">═ ║ ╔ Double Lines</h2>
+            <h2 className="text-3xl font-bold text-gray-100">═ ║ ╔ Double Lines</h2>
             <span className="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">{doubleLines.length} symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">Double-line box drawing for emphasized borders and divisions</p>
+          <p className="text-gray-400 mb-6">Double-line box drawing for emphasized borders and divisions</p>
           <CopyGrid items={doubleLines} />
         </section>
 
         {/* Rounded Lines Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">╒ ╓ ╕ Rounded Corners</h2>
+            <h2 className="text-3xl font-bold text-gray-100">╒ ╓ ╕ Rounded Corners</h2>
             <span className="text-sm bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full">{roundedLines.length} symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">Box drawing with rounded corners and mixed line styles</p>
+          <p className="text-gray-400 mb-6">Box drawing with rounded corners and mixed line styles</p>
           <CopyGrid items={roundedLines} />
         </section>
 
         {/* Dashed Lines Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">— – ‐ Dashes & Dashes</h2>
+            <h2 className="text-3xl font-bold text-gray-100">— – ‐ Dashes & Dashes</h2>
             <span className="text-sm bg-purple-100 text-purple-700 px-3 py-1 rounded-full">{dashedLines.length} symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">Dashed lines, hyphens, and punctuation dashes of varying lengths</p>
+          <p className="text-gray-400 mb-6">Dashed lines, hyphens, and punctuation dashes of varying lengths</p>
           <CopyGrid items={dashedLines} />
         </section>
 
         {/* Decorative Lines Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">⸻ ━━━ ═══ Decorative Dividers</h2>
+            <h2 className="text-3xl font-bold text-gray-100">⸻ ━━━ ═══ Decorative Dividers</h2>
             <span className="text-sm bg-pink-100 text-pink-700 px-3 py-1 rounded-full">{decorativeLines.length} symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">Ornamental lines and decorative dividers for text separation</p>
+          <p className="text-gray-400 mb-6">Ornamental lines and decorative dividers for text separation</p>
           <CopyGrid items={decorativeLines} />
         </section>
 
         {/* Trigram Lines Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">☰ ☱ ☲ I Ching Trigrams</h2>
+            <h2 className="text-3xl font-bold text-gray-100">☰ ☱ ☲ I Ching Trigrams</h2>
             <span className="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full">{trigramLines.length} symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">I Ching trigrams and philosophical line patterns</p>
+          <p className="text-gray-400 mb-6">I Ching trigrams and philosophical line patterns</p>
           <CopyGrid items={trigramLines} />
         </section>
 
         {/* SEO Content */}
         <section className="mt-20 bg-gradient-to-r from-slate-50 to-gray-50 p-8 rounded-lg">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">About Line Symbols and Box Drawing</h2>
-          <div className="text-gray-700 space-y-4">
+          <h2 className="text-2xl font-bold text-gray-100 mb-6">About Line Symbols and Box Drawing</h2>
+          <div className="text-gray-300 space-y-4">
             <p>
               Line symbols and box drawing characters are essential Unicode characters used for creating borders, decorative dividers, ASCII art, and text-based interfaces. Our collection of 60+ line symbols covers every style and purpose, from basic single lines ─ and │ to complex box drawing with corners ┌ ┐ └ ┘ and decorative dashes.
             </p>
@@ -112,8 +112,8 @@ export default function LinesPage() {
 
         {/* Quick Tips Section */}
         <section className="mt-12 bg-gradient-to-r from-gray-50 to-slate-50 p-8 rounded-lg">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Tips for Using Line Symbols</h2>
-          <ul className="text-gray-700 space-y-3">
+          <h2 className="text-2xl font-bold text-gray-100 mb-4">Tips for Using Line Symbols</h2>
+          <ul className="text-gray-300 space-y-3">
             <li className="flex gap-3">
               <span className="text-slate-600 font-bold">─</span>
               <span><strong>Copy with one click:</strong> Click any line symbol to instantly copy it to your clipboard</span>

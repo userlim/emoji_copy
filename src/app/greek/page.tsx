@@ -20,37 +20,37 @@ export default function GreekPage() {
       <CategoryNav current="/greek" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-2 text-gray-900">
+        <h1 className="text-4xl font-bold text-center mb-2 text-gray-100">
           Greek Letters Copy and Paste
         </h1>
-        <p className="text-center text-gray-600 mb-12">
+        <p className="text-center text-gray-400 mb-12">
           Discover and copy Greek alphabet letters for math, science, and academic writing
         </p>
 
         <div className="space-y-12">
           {/* Uppercase Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">Α Β Γ Uppercase Letters</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-200">Α Β Γ Uppercase Letters</h2>
             <CopyGrid items={uppercaseLetters} />
           </section>
 
           {/* Lowercase Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">α β γ Lowercase Letters</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-200">α β γ Lowercase Letters</h2>
             <CopyGrid items={lowercaseLetters} />
           </section>
 
           {/* Variants Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">ϐ ϑ ϕ Letter Variants</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-200">ϐ ϑ ϕ Letter Variants</h2>
             <CopyGrid items={variantLetters} />
           </section>
         </div>
 
         {/* SEO Content */}
-        <section className="mt-16 bg-white rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-900">Greek Letters Copy and Paste Guide</h2>
-          <div className="prose prose-sm max-w-none text-gray-700 space-y-4">
+        <section className="mt-16 bg-white/[0.03] rounded-lg shadow-sm p-8">
+          <h2 className="text-2xl font-bold mb-4 text-gray-100">Greek Letters Copy and Paste Guide</h2>
+          <div className="prose prose-sm max-w-none text-gray-300 space-y-4">
             <p>
               Greek letters are essential symbols used in mathematics, science, engineering, and academia. From alpha (α) to omega (ω), these characters are fundamental in equations, formulas, and scientific notation.
             </p>

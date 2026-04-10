@@ -37,53 +37,53 @@ export default function HeartsPage() {
       <main className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-12">
           <h1 className="text-5xl font-bold text-red-600 mb-4">Heart Symbols & Love Emojis</h1>
-          <p className="text-xl text-gray-700">Copy 150+ heart symbols, love emojis, and decorative heart designs. Perfect for messages, social media, and creative projects.</p>
+          <p className="text-xl text-gray-300">Copy 150+ heart symbols, love emojis, and decorative heart designs. Perfect for messages, social media, and creative projects.</p>
         </header>
 
         {/* Emoji Hearts Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">❤️ Emoji Hearts</h2>
+            <h2 className="text-3xl font-bold text-gray-100">❤️ Emoji Hearts</h2>
             <span className="text-sm bg-red-100 text-red-700 px-3 py-1 rounded-full">29 symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">Standard heart emojis with various colors and styles</p>
+          <p className="text-gray-400 mb-6">Standard heart emojis with various colors and styles</p>
           <CopyGrid items={heartEmojis} />
         </section>
 
         {/* Text Hearts Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">♡ Text Hearts</h2>
+            <h2 className="text-3xl font-bold text-gray-100">♡ Text Hearts</h2>
             <span className="text-sm bg-pink-100 text-pink-700 px-3 py-1 rounded-full">19 symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">Text-based heart symbols that work in all devices and platforms</p>
+          <p className="text-gray-400 mb-6">Text-based heart symbols that work in all devices and platforms</p>
           <CopyGrid items={textHearts} />
         </section>
 
         {/* Decorative Hearts Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">💖 Decorative & Skin Tone Hearts</h2>
+            <h2 className="text-3xl font-bold text-gray-100">💖 Decorative & Skin Tone Hearts</h2>
             <span className="text-sm bg-rose-100 text-rose-700 px-3 py-1 rounded-full">25 symbols</span>
           </div>
-          <p className="text-gray-600 mb-6">Fancy decorative hearts with varied styles and skin tone variations</p>
+          <p className="text-gray-400 mb-6">Fancy decorative hearts with varied styles and skin tone variations</p>
           <CopyGrid items={decorativeHearts} />
         </section>
 
         {/* Heart Combos Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">💕 Heart Combinations</h2>
+            <h2 className="text-3xl font-bold text-gray-100">💕 Heart Combinations</h2>
             <span className="text-sm bg-red-100 text-red-700 px-3 py-1 rounded-full">12 combos</span>
           </div>
-          <p className="text-gray-600 mb-6">Popular heart combinations ready to copy and paste</p>
+          <p className="text-gray-400 mb-6">Popular heart combinations ready to copy and paste</p>
           <CopyGrid items={heartCombos} />
         </section>
 
         {/* SEO Content */}
-        <section className="mt-20 bg-gray-50 p-8 rounded-lg">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">About Heart Symbols</h2>
-          <div className="text-gray-700 space-y-4">
+        <section className="mt-20 bg-white/[0.02] p-8 rounded-lg">
+          <h2 className="text-2xl font-bold text-gray-100 mb-4">About Heart Symbols</h2>
+          <div className="text-gray-300 space-y-4">
             <p>
               Heart symbols are universal expressions of love, affection, and emotion. Whether you're writing a romantic message, expressing gratitude, or adding personality to your social media posts, our collection of 150+ heart emojis and text symbols has everything you need.
             </p>
