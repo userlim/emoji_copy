@@ -23,7 +23,7 @@ export default function GreekPage() {
         <h1 className="text-4xl font-bold text-center mb-2 text-gray-100">
           Greek Letters Copy and Paste
         </h1>
-        <p className="text-center text-gray-400 mb-12">
+        <p className="text-center text-[var(--text-muted)] mb-12">
           Discover and copy Greek alphabet letters for math, science, and academic writing
         </p>
 
@@ -50,7 +50,7 @@ export default function GreekPage() {
         {/* SEO Content */}
         <section className="mt-16 bg-white/[0.03] rounded-lg shadow-sm p-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-100">Greek Letters Copy and Paste Guide</h2>
-          <div className="prose prose-sm max-w-none text-gray-300 space-y-4">
+          <div className="prose prose-sm max-w-none text-[var(--text-muted)] space-y-4">
             <p>
               Greek letters are essential symbols used in mathematics, science, engineering, and academia. From alpha (α) to omega (ω), these characters are fundamental in equations, formulas, and scientific notation.
             </p>

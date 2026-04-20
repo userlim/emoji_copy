@@ -38,7 +38,7 @@ export default function ChessPage() {
         <h1 className="text-4xl font-bold text-center mb-2 text-gray-100">
           Chess Symbols Copy and Paste
         </h1>
-        <p className="text-center text-gray-400 mb-12">
+        <p className="text-center text-[var(--text-muted)] mb-12">
           Discover and copy chess piece symbols and game symbols for chess notation and discussions
         </p>
 
@@ -66,10 +66,10 @@ export default function ChessPage() {
             <h2 className="text-2xl font-bold mb-6 text-gray-200">♔ Chess Piece Reference</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-4">
               {chessPieces.map((piece) => (
-                <div key={piece.name} className="bg-white/[0.03] rounded-lg p-4 border border-white/10 text-center">
+                <div key={piece.name} className="bg-white/[0.03] rounded-lg p-4 border border-[rgba(255,255,255,0.06)] text-center">
                   <div className="text-3xl mb-1">{piece.symbol}</div>
                   <div className="text-sm font-bold text-gray-100">{piece.name}</div>
-                  <div className="text-xs text-gray-500">{piece.piece}</div>
+                  <div className="text-xs text-[var(--text-secondary)]">{piece.piece}</div>
                 </div>
               ))}
             </div>
@@ -80,7 +80,7 @@ export default function ChessPage() {
         {/* SEO Content */}
         <section className="mt-16 bg-white/[0.03] rounded-lg shadow-sm p-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-100">Chess Symbols Copy and Paste Guide</h2>
-          <div className="prose prose-sm max-w-none text-gray-300 space-y-4">
+          <div className="prose prose-sm max-w-none text-[var(--text-muted)] space-y-4">
             <p>
               Chess symbols are Unicode characters representing the pieces and elements of chess. These symbols are perfect for chess notation, game analysis, and chess-related content. Each symbol represents a specific chess piece with distinct movement rules and strategic importance.
             </p>

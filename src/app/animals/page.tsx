@@ -23,7 +23,7 @@ export default function AnimalsPage() {
         <h1 className="text-4xl font-bold text-center mb-2 text-gray-100">
           Animal Emoji Copy and Paste
         </h1>
-        <p className="text-center text-gray-400 mb-12">
+        <p className="text-center text-[var(--text-muted)] mb-12">
           Discover and copy 150+ animal emojis including pets, bugs, sea creatures, and more
         </p>
 
@@ -50,7 +50,7 @@ export default function AnimalsPage() {
         {/* SEO Content */}
         <section className="mt-16 bg-white/[0.03] rounded-lg shadow-sm p-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-100">Animal Emoji Copy and Paste Guide</h2>
-          <div className="prose prose-sm max-w-none text-gray-300 space-y-4">
+          <div className="prose prose-sm max-w-none text-[var(--text-muted)] space-y-4">
             <p>
               Animal emojis are perfect for expressing your love for pets, wildlife, and nature. Whether you're texting about your cute dog 🐶, favorite cat 🐱, or a sea adventure 🐋, we've got all the animal emojis you need.
             </p>

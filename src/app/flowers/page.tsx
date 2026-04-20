@@ -26,7 +26,7 @@ export default function FlowersPage() {
       <main className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-12">
           <h1 className="text-5xl font-bold text-pink-600 mb-4">Flower Symbols & Nature Emoji</h1>
-          <p className="text-xl text-gray-300">Copy 55+ flower and nature symbols including decorative flowers ✿ ❀, emoji flowers 🌸 🌹, leaves, plants, and botanical elements. Perfect for creative designs, nature projects, and decorative content.</p>
+          <p className="text-xl text-[var(--text-muted)]">Copy 55+ flower and nature symbols including decorative flowers ✿ ❀, emoji flowers 🌸 🌹, leaves, plants, and botanical elements. Perfect for creative designs, nature projects, and decorative content.</p>
         </header>
 
         {/* Decorative Flowers Section */}
@@ -35,7 +35,7 @@ export default function FlowersPage() {
             <h2 className="text-3xl font-bold text-gray-100">✿ ❀ ❁ Decorative Flowers</h2>
             <span className="text-sm bg-pink-100 text-pink-700 px-3 py-1 rounded-full">{decorativeFlowers.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Ornamental flower symbols perfect for borders and decorative designs</p>
+          <p className="text-[var(--text-muted)] mb-6">Ornamental flower symbols perfect for borders and decorative designs</p>
           <CopyGrid items={decorativeFlowers} />
         </section>
 
@@ -45,7 +45,7 @@ export default function FlowersPage() {
             <h2 className="text-3xl font-bold text-gray-100">🌸 🌺 🌻 Colorful Flowers</h2>
             <span className="text-sm bg-red-100 text-red-700 px-3 py-1 rounded-full">{emojiFlowers.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Beautiful flower emoji in various colors and styles</p>
+          <p className="text-[var(--text-muted)] mb-6">Beautiful flower emoji in various colors and styles</p>
           <CopyGrid items={emojiFlowers} />
         </section>
 
@@ -55,7 +55,7 @@ export default function FlowersPage() {
             <h2 className="text-3xl font-bold text-gray-100">🍀 🍁 🍂 Leaves & Foliage</h2>
             <span className="text-sm bg-green-100 text-green-700 px-3 py-1 rounded-full">{leaves.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Leaf and foliage symbols for botanical and nature themes</p>
+          <p className="text-[var(--text-muted)] mb-6">Leaf and foliage symbols for botanical and nature themes</p>
           <CopyGrid items={leaves} />
         </section>
 
@@ -65,7 +65,7 @@ export default function FlowersPage() {
             <h2 className="text-3xl font-bold text-gray-100">🌱 🌲 🌳 Trees & Plants</h2>
             <span className="text-sm bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full">{plants.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Tree and plant emoji for nature-themed designs and content</p>
+          <p className="text-[var(--text-muted)] mb-6">Tree and plant emoji for nature-themed designs and content</p>
           <CopyGrid items={plants} />
         </section>
 
@@ -73,16 +73,16 @@ export default function FlowersPage() {
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <h2 className="text-3xl font-bold text-gray-100">✻ ✼ ✺ Flower Variants</h2>
-            <span className="text-sm bg-purple-100 text-purple-700 px-3 py-1 rounded-full">{flowerVariants.length} symbols</span>
+            <span className="text-sm bg-[rgba(var(--accent-rgb),0.12)] text-[var(--accent)] px-3 py-1 rounded-full">{flowerVariants.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Geometric and star-like flower variations</p>
+          <p className="text-[var(--text-muted)] mb-6">Geometric and star-like flower variations</p>
           <CopyGrid items={flowerVariants} />
         </section>
 
         {/* SEO Content */}
         <section className="mt-20 bg-gradient-to-r from-pink-50 to-red-50 p-8 rounded-lg">
           <h2 className="text-2xl font-bold text-gray-100 mb-6">About Flower Symbols</h2>
-          <div className="text-gray-300 space-y-4">
+          <div className="text-[var(--text-muted)] space-y-4">
             <p>
               Flower symbols are beautiful Unicode characters used for decoration, botanical representation, and nature-themed design. Our collection of 55+ flower symbols covers decorative flowers ✿ ❀, vibrant emoji flowers 🌸 🌹, leaves, plants, and botanical elements.
             </p>
@@ -101,7 +101,7 @@ export default function FlowersPage() {
         {/* Quick Tips Section */}
         <section className="mt-12 bg-gradient-to-r from-red-50 to-pink-50 p-8 rounded-lg">
           <h2 className="text-2xl font-bold text-gray-100 mb-4">Tips for Using Flower Symbols</h2>
-          <ul className="text-gray-300 space-y-3">
+          <ul className="text-[var(--text-muted)] space-y-3">
             <li className="flex gap-3">
               <span className="text-pink-600 font-bold">✿</span>
               <span><strong>Copy with one click:</strong> Click any flower symbol to instantly copy it to your clipboard</span>

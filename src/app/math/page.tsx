@@ -32,7 +32,7 @@ export default function MathPage() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12">
           <h1 className="text-5xl font-bold text-gray-100 mb-4">Mathematical Symbols</h1>
-          <p className="text-xl text-gray-300">Copy and paste mathematical symbols for algebra, calculus, set theory, logic, and more. Perfect for scientific writing, equations, and technical documents.</p>
+          <p className="text-xl text-[var(--text-muted)]">Copy and paste mathematical symbols for algebra, calculus, set theory, logic, and more. Perfect for scientific writing, equations, and technical documents.</p>
         </div>
 
         <div className="space-y-12">
@@ -50,19 +50,19 @@ export default function MathPage() {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">Can I use math symbols in Microsoft Word?</h3>
-              <p className="text-gray-300">Yes, all these mathematical symbols can be pasted directly into Word documents. Some may require specific fonts for proper display, but most are universally supported.</p>
+              <p className="text-[var(--text-muted)]">Yes, all these mathematical symbols can be pasted directly into Word documents. Some may require specific fonts for proper display, but most are universally supported.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">Are these symbols better than using LaTeX?</h3>
-              <p className="text-gray-300">These Unicode symbols are great for simple equations and documents. For complex mathematical typesetting, LaTeX is still the professional standard, but Unicode symbols work well for quick notation.</p>
+              <p className="text-[var(--text-muted)]">These Unicode symbols are great for simple equations and documents. For complex mathematical typesetting, LaTeX is still the professional standard, but Unicode symbols work well for quick notation.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">What's the difference between × and *?</h3>
-              <p className="text-gray-300">× is the proper multiplication symbol for mathematical notation. The asterisk (*) is typically used in programming and spreadsheets. For formal mathematics, use ×.</p>
+              <p className="text-[var(--text-muted)]">× is the proper multiplication symbol for mathematical notation. The asterisk (*) is typically used in programming and spreadsheets. For formal mathematics, use ×.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">Can I use Greek letters in email?</h3>
-              <p className="text-gray-300">Yes, Greek letters are standard Unicode characters and work in all email clients and applications. They may display slightly differently depending on the font, but are universally supported.</p>
+              <p className="text-[var(--text-muted)]">Yes, Greek letters are standard Unicode characters and work in all email clients and applications. They may display slightly differently depending on the font, but are universally supported.</p>
             </div>
           </div>
         </div>

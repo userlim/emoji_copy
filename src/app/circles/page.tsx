@@ -30,7 +30,7 @@ export default function CirclesPage() {
       <main className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-12">
           <h1 className="text-5xl font-bold text-red-600 mb-4">Circle Symbols & Characters</h1>
-          <p className="text-xl text-gray-300">Copy 60+ circle symbols in every style. From solid filled circles ● to hollow circles ○, colored emoji circles, and mathematical circle operators. Perfect for bullet points, decorative elements, and documents.</p>
+          <p className="text-xl text-[var(--text-muted)]">Copy 60+ circle symbols in every style. From solid filled circles ● to hollow circles ○, colored emoji circles, and mathematical circle operators. Perfect for bullet points, decorative elements, and documents.</p>
         </header>
 
         {/* Filled Circles Section */}
@@ -39,7 +39,7 @@ export default function CirclesPage() {
             <h2 className="text-3xl font-bold text-gray-100">● ⚫ 🔴 Filled Circles</h2>
             <span className="text-sm bg-red-100 text-red-700 px-3 py-1 rounded-full">{filledCircles.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Solid filled circle symbols in black, red, and other colors</p>
+          <p className="text-[var(--text-muted)] mb-6">Solid filled circle symbols in black, red, and other colors</p>
           <CopyGrid items={filledCircles} />
         </section>
 
@@ -49,7 +49,7 @@ export default function CirclesPage() {
             <h2 className="text-3xl font-bold text-gray-100">○ ◎ ◯ Empty Circles</h2>
             <span className="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">{emptyCircles.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Hollow and empty circle variants for contrast and design</p>
+          <p className="text-[var(--text-muted)] mb-6">Hollow and empty circle variants for contrast and design</p>
           <CopyGrid items={emptyCircles} />
         </section>
 
@@ -59,7 +59,7 @@ export default function CirclesPage() {
             <h2 className="text-3xl font-bold text-gray-100">◉ ◐ ◑ Circle Variants</h2>
             <span className="text-sm bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full">{circleVariants.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Partial circles, segmented circles, and geometric variants</p>
+          <p className="text-[var(--text-muted)] mb-6">Partial circles, segmented circles, and geometric variants</p>
           <CopyGrid items={circleVariants} />
         </section>
 
@@ -69,7 +69,7 @@ export default function CirclesPage() {
             <h2 className="text-3xl font-bold text-gray-100">◦ • ∘ Decorative Circles</h2>
             <span className="text-sm bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full">{decorativeCircles.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Small decorative dots and bullet points for lists and design</p>
+          <p className="text-[var(--text-muted)] mb-6">Small decorative dots and bullet points for lists and design</p>
           <CopyGrid items={decorativeCircles} />
         </section>
 
@@ -79,7 +79,7 @@ export default function CirclesPage() {
             <h2 className="text-3xl font-bold text-gray-100">🔴 🟠 🟡 Colored Emoji Circles</h2>
             <span className="text-sm bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full">{coloredCircles.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Bright colored circle emoji in red, orange, yellow, green, blue, and more</p>
+          <p className="text-[var(--text-muted)] mb-6">Bright colored circle emoji in red, orange, yellow, green, blue, and more</p>
           <CopyGrid items={coloredCircles} />
         </section>
 
@@ -87,9 +87,9 @@ export default function CirclesPage() {
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <h2 className="text-3xl font-bold text-gray-100">⊕ ⊖ ⊗ Mathematical Circles</h2>
-            <span className="text-sm bg-purple-100 text-purple-700 px-3 py-1 rounded-full">{mathCircles.length} symbols</span>
+            <span className="text-sm bg-[rgba(var(--accent-rgb),0.12)] text-[var(--accent)] px-3 py-1 rounded-full">{mathCircles.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Mathematical operator circles for equations and technical documents</p>
+          <p className="text-[var(--text-muted)] mb-6">Mathematical operator circles for equations and technical documents</p>
           <CopyGrid items={mathCircles} />
         </section>
 
@@ -99,14 +99,14 @@ export default function CirclesPage() {
             <h2 className="text-3xl font-bold text-gray-100">◌ ◍ ◎ Miscellaneous Circles</h2>
             <span className="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full">{miscCircles.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Specialized circle characters and unique geometric variants</p>
+          <p className="text-[var(--text-muted)] mb-6">Specialized circle characters and unique geometric variants</p>
           <CopyGrid items={miscCircles} />
         </section>
 
         {/* SEO Content */}
         <section className="mt-20 bg-gradient-to-r from-red-50 to-orange-50 p-8 rounded-lg">
           <h2 className="text-2xl font-bold text-gray-100 mb-6">About Circle Symbols</h2>
-          <div className="text-gray-300 space-y-4">
+          <div className="text-[var(--text-muted)] space-y-4">
             <p>
               Circle symbols are fundamental Unicode characters used in writing, design, mathematics, and digital communication. Our collection of 60+ circle symbols covers every style and purpose, from basic solid circles ● to hollow variants ○, colorful emoji circles, and mathematical operators.
             </p>
@@ -125,7 +125,7 @@ export default function CirclesPage() {
         {/* Quick Tips Section */}
         <section className="mt-12 bg-gradient-to-r from-orange-50 to-red-50 p-8 rounded-lg">
           <h2 className="text-2xl font-bold text-gray-100 mb-4">Tips for Using Circle Symbols</h2>
-          <ul className="text-gray-300 space-y-3">
+          <ul className="text-[var(--text-muted)] space-y-3">
             <li className="flex gap-3">
               <span className="text-red-600 font-bold">•</span>
               <span><strong>Copy with one click:</strong> Click any circle symbol to instantly copy it to your clipboard</span>

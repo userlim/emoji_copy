@@ -29,7 +29,7 @@ export default function TextFacesPage() {
         <h1 className="text-4xl font-bold text-center mb-2 text-gray-100">
           Kaomoji Text Faces Copy and Paste
         </h1>
-        <p className="text-center text-gray-400 mb-12">
+        <p className="text-center text-[var(--text-muted)] mb-12">
           Discover and copy 80+ expressive kaomoji text faces for your messages
         </p>
 
@@ -74,7 +74,7 @@ export default function TextFacesPage() {
         {/* SEO Content */}
         <section className="mt-16 bg-white/[0.03] rounded-lg shadow-sm p-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-100">Kaomoji Text Faces Copy and Paste Guide</h2>
-          <div className="prose prose-sm max-w-none text-gray-300 space-y-4">
+          <div className="prose prose-sm max-w-none text-[var(--text-muted)] space-y-4">
             <p>
               Kaomoji are Japanese text emoticons that express emotions and feelings using ASCII characters and Unicode symbols. They are perfect for adding personality and expression to your text messages when traditional emojis aren't available.
             </p>

@@ -221,7 +221,7 @@ export default function EmojiBoard() {
         {search && (
           <button
             onClick={() => setSearch('')}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-400 text-lg"
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)] hover:text-[var(--text-muted)] text-lg"
           >
             ✕
           </button>
@@ -237,7 +237,7 @@ export default function EmojiBoard() {
               className={`shrink-0 px-3 py-1.5 rounded-full text-sm font-semibold transition-colors ${
                 activeCategory === 'recent'
                   ? 'text-white'
-                  : 'text-gray-400 bg-white/[0.04] hover:bg-gray-200'
+                  : 'text-[var(--text-muted)] bg-white/[0.04] hover:bg-[rgba(255,255,255,0.04)]'
               }`}
               style={activeCategory === 'recent' ? { background: 'var(--accent)' } : {}}
             >
@@ -251,7 +251,7 @@ export default function EmojiBoard() {
               className={`shrink-0 px-3 py-1.5 rounded-full text-sm font-semibold transition-colors ${
                 activeCategory === cat.id
                   ? 'text-white'
-                  : 'text-gray-400 bg-white/[0.04] hover:bg-gray-200'
+                  : 'text-[var(--text-muted)] bg-white/[0.04] hover:bg-[rgba(255,255,255,0.04)]'
               }`}
               style={activeCategory === cat.id ? { background: 'var(--accent)' } : {}}
             >
@@ -271,7 +271,7 @@ export default function EmojiBoard() {
       {/* Recent section */}
       {!search && activeCategory === 'recent' && recentItems.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-sm font-bold text-gray-500 mb-2 uppercase tracking-wide">🕐 Recently Used</h2>
+          <h2 className="text-sm font-bold text-[var(--text-secondary)] mb-2 uppercase tracking-wide">🕐 Recently Used</h2>
           <div className="grid gap-1" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(44px, 1fr))' }}>
             {recentItems.map((emoji, i) => (
               <button
@@ -291,7 +291,7 @@ export default function EmojiBoard() {
       {(search ? filteredCategories : categories.filter(c => c.id === activeCategory)).map(cat => (
         <div key={cat.id} className="mb-6">
           {search && (
-            <h2 className="text-sm font-bold text-gray-500 mb-2 uppercase tracking-wide">
+            <h2 className="text-sm font-bold text-[var(--text-secondary)] mb-2 uppercase tracking-wide">
               {cat.icon} {cat.label} ({cat.items.length})
             </h2>
           )}
@@ -322,7 +322,7 @@ export default function EmojiBoard() {
       ))}
 
       {search && filteredCategories.length === 0 && (
-        <div className="text-center py-12 text-gray-400">
+        <div className="text-center py-12 text-[var(--text-muted)]">
           <p className="text-4xl mb-2">🔍</p>
           <p>No emojis found for &ldquo;{search}&rdquo;</p>
         </div>

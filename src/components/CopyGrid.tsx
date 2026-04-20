@@ -41,7 +41,7 @@ export default function CopyGrid({ items, columns }: CopyGridProps) {
       )}
       {recent.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-xs font-bold text-gray-400 mb-2 uppercase tracking-widest">Recently Copied</h2>
+          <h2 className="text-xs font-bold text-[var(--text-muted)] mb-2 uppercase tracking-widest">Recently Copied</h2>
           <div className="flex flex-wrap gap-1">
             {recent.slice(0, 20).map((s, i) => (
               <button key={i} onClick={() => handleCopy(s)}

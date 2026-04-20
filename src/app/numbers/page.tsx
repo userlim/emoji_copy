@@ -32,7 +32,7 @@ export default function NumbersPage() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12">
           <h1 className="text-5xl font-bold text-gray-100 mb-4">Number Symbols & Circled Numbers</h1>
-          <p className="text-xl text-gray-300">Copy and paste circled numbers, Roman numerals, superscript, subscript, and special number formatting. Perfect for lists, equations, and technical notation.</p>
+          <p className="text-xl text-[var(--text-muted)]">Copy and paste circled numbers, Roman numerals, superscript, subscript, and special number formatting. Perfect for lists, equations, and technical notation.</p>
         </div>
 
         <div className="space-y-12">
@@ -50,23 +50,23 @@ export default function NumbersPage() {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">What are circled numbers used for?</h3>
-              <p className="text-gray-300">Circled numbers (①②③) are commonly used for numbered lists, bullet points, and visual indexing. They're especially popular in East Asian typography and add visual interest to documents.</p>
+              <p className="text-[var(--text-muted)]">Circled numbers (①②③) are commonly used for numbered lists, bullet points, and visual indexing. They're especially popular in East Asian typography and add visual interest to documents.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">What's the difference between circled and negative circled numbers?</h3>
-              <p className="text-gray-300">Circled numbers (①) have the circle in the background with dark numbers. Negative circled numbers (❶) have dark circles with light numbers inside, creating a reversed or inverted appearance.</p>
+              <p className="text-[var(--text-muted)]">Circled numbers (①) have the circle in the background with dark numbers. Negative circled numbers (❶) have dark circles with light numbers inside, creating a reversed or inverted appearance.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">When should I use Roman numerals?</h3>
-              <p className="text-gray-300">Roman numerals (Ⅰ Ⅱ Ⅲ) are traditionally used for outline numbering, chapter numbers in books, movie sequels, copyright dates, and formal documents. They add a classical or formal appearance.</p>
+              <p className="text-[var(--text-muted)]">Roman numerals (Ⅰ Ⅱ Ⅲ) are traditionally used for outline numbering, chapter numbers in books, movie sequels, copyright dates, and formal documents. They add a classical or formal appearance.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">What are superscript and subscript numbers?</h3>
-              <p className="text-gray-300">Superscript numbers (¹²³) appear above the baseline and are used for footnotes, exponents, and citations. Subscript numbers (₁₂₃) appear below and are used in chemistry formulas and mathematical notation.</p>
+              <p className="text-[var(--text-muted)]">Superscript numbers (¹²³) appear above the baseline and are used for footnotes, exponents, and citations. Subscript numbers (₁₂₃) appear below and are used in chemistry formulas and mathematical notation.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">What are full-width numbers?</h3>
-              <p className="text-gray-300">Full-width numbers (０１２) are used in East Asian typography to match the width of full-width characters. They're commonly used in Japanese, Chinese, and Korean documents.</p>
+              <p className="text-[var(--text-muted)]">Full-width numbers (０１２) are used in East Asian typography to match the width of full-width characters. They're commonly used in Japanese, Chinese, and Korean documents.</p>
             </div>
           </div>
         </div>

@@ -38,7 +38,7 @@ export default function ArrowsPage() {
       <main className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-12">
           <h1 className="text-5xl font-bold text-blue-600 mb-4">Arrow Symbols & Characters</h1>
-          <p className="text-xl text-gray-300">Copy 250+ arrow symbols in every direction. From basic arrows ← → ↑ ↓ to complex double arrows ⇒ ⇐ and decorative variants. Perfect for documents, messages, and design projects.</p>
+          <p className="text-xl text-[var(--text-muted)]">Copy 250+ arrow symbols in every direction. From basic arrows ← → ↑ ↓ to complex double arrows ⇒ ⇐ and decorative variants. Perfect for documents, messages, and design projects.</p>
         </header>
 
         {/* Basic Arrows Section */}
@@ -47,7 +47,7 @@ export default function ArrowsPage() {
             <h2 className="text-3xl font-bold text-gray-100">← → ↑ ↓ Basic Arrows</h2>
             <span className="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">{basicArrows.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Standard directional arrows: left, right, up, down, and diagonals</p>
+          <p className="text-[var(--text-muted)] mb-6">Standard directional arrows: left, right, up, down, and diagonals</p>
           <CopyGrid items={basicArrows} />
         </section>
 
@@ -57,7 +57,7 @@ export default function ArrowsPage() {
             <h2 className="text-3xl font-bold text-gray-100">↩ ↪ Return & Hook Arrows</h2>
             <span className="text-sm bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full">{returnHookArrows.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Curved arrows perfect for indicating returns, replies, and loops</p>
+          <p className="text-[var(--text-muted)] mb-6">Curved arrows perfect for indicating returns, replies, and loops</p>
           <CopyGrid items={returnHookArrows} />
         </section>
 
@@ -67,7 +67,7 @@ export default function ArrowsPage() {
             <h2 className="text-3xl font-bold text-gray-100">↼ ↽ Harpoon Arrows</h2>
             <span className="text-sm bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full">{harpoonArrows.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Specialized harpoon-style arrows with partial heads</p>
+          <p className="text-[var(--text-muted)] mb-6">Specialized harpoon-style arrows with partial heads</p>
           <CopyGrid items={harpoonArrows} />
         </section>
 
@@ -75,9 +75,9 @@ export default function ArrowsPage() {
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <h2 className="text-3xl font-bold text-gray-100">⇐ ⇒ ⇔ Double & Paired Arrows</h2>
-            <span className="text-sm bg-purple-100 text-purple-700 px-3 py-1 rounded-full">{doubleArrows.length} symbols</span>
+            <span className="text-sm bg-[rgba(var(--accent-rgb),0.12)] text-[var(--accent)] px-3 py-1 rounded-full">{doubleArrows.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Double-line arrows for emphasis and special meanings</p>
+          <p className="text-[var(--text-muted)] mb-6">Double-line arrows for emphasis and special meanings</p>
           <CopyGrid items={doubleArrows} />
         </section>
 
@@ -87,7 +87,7 @@ export default function ArrowsPage() {
             <h2 className="text-3xl font-bold text-gray-100">⇦ ⇨ White & Outline Arrows</h2>
             <span className="text-sm bg-pink-100 text-pink-700 px-3 py-1 rounded-full">{whiteOutlineArrows.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Outlined and hollow arrow variants for unique styling</p>
+          <p className="text-[var(--text-muted)] mb-6">Outlined and hollow arrow variants for unique styling</p>
           <CopyGrid items={whiteOutlineArrows} />
         </section>
 
@@ -97,7 +97,7 @@ export default function ArrowsPage() {
             <h2 className="text-3xl font-bold text-gray-100">➤ ➜ ➡ Heavy & Dingbat Arrows</h2>
             <span className="text-sm bg-red-100 text-red-700 px-3 py-1 rounded-full">{heavyDingbatArrows.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Bold, thick arrows for prominent directional indicators</p>
+          <p className="text-[var(--text-muted)] mb-6">Bold, thick arrows for prominent directional indicators</p>
           <CopyGrid items={heavyDingbatArrows} />
         </section>
 
@@ -107,7 +107,7 @@ export default function ArrowsPage() {
             <h2 className="text-3xl font-bold text-gray-100">⟵ ⟶ ⟷ Supplemental Arrows</h2>
             <span className="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full">{supplementalArrows.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Extended arrow symbols from Unicode's supplemental planes</p>
+          <p className="text-[var(--text-muted)] mb-6">Extended arrow symbols from Unicode's supplemental planes</p>
           <CopyGrid items={supplementalArrows} />
         </section>
 
@@ -117,7 +117,7 @@ export default function ArrowsPage() {
             <h2 className="text-3xl font-bold text-gray-100">⤀ ⤁ ⤂ Miscellaneous Arrows</h2>
             <span className="text-sm bg-green-100 text-green-700 px-3 py-1 rounded-full">{miscellaneousArrows.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Advanced and specialized arrow characters for complex documents</p>
+          <p className="text-[var(--text-muted)] mb-6">Advanced and specialized arrow characters for complex documents</p>
           <CopyGrid items={miscellaneousArrows} />
         </section>
 
@@ -127,7 +127,7 @@ export default function ArrowsPage() {
             <h2 className="text-3xl font-bold text-gray-100">⬅ ⬆ ⬇ Bold & Emoji Arrows</h2>
             <span className="text-sm bg-teal-100 text-teal-700 px-3 py-1 rounded-full">{boldEmojiArrows.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Solid, bold arrows perfect for UI design and social media</p>
+          <p className="text-[var(--text-muted)] mb-6">Solid, bold arrows perfect for UI design and social media</p>
           <CopyGrid items={boldEmojiArrows} />
         </section>
 
@@ -137,7 +137,7 @@ export default function ArrowsPage() {
             <h2 className="text-3xl font-bold text-gray-100">▶ ◀ ▲ ▼ Triangle Arrows</h2>
             <span className="text-sm bg-violet-100 text-violet-700 px-3 py-1 rounded-full">{triangleArrows.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Geometric triangle-based arrow characters</p>
+          <p className="text-[var(--text-muted)] mb-6">Geometric triangle-based arrow characters</p>
           <CopyGrid items={triangleArrows} />
         </section>
 
@@ -147,14 +147,14 @@ export default function ArrowsPage() {
             <h2 className="text-3xl font-bold text-gray-100">⮕ ⭠ ⭡ Emoji Arrows</h2>
             <span className="text-sm bg-fuchsia-100 text-fuchsia-700 px-3 py-1 rounded-full">{emojiArrows.length} symbols</span>
           </div>
-          <p className="text-gray-400 mb-6">Modern emoji-style arrows with smooth, rounded designs</p>
+          <p className="text-[var(--text-muted)] mb-6">Modern emoji-style arrows with smooth, rounded designs</p>
           <CopyGrid items={emojiArrows} />
         </section>
 
         {/* SEO Content */}
         <section className="mt-20 bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-lg">
           <h2 className="text-2xl font-bold text-gray-100 mb-6">About Arrow Symbols</h2>
-          <div className="text-gray-300 space-y-4">
+          <div className="text-[var(--text-muted)] space-y-4">
             <p>
               Arrow symbols are essential Unicode characters used across writing, design, documentation, and digital communication. Our collection of 250+ arrow symbols covers every direction and style imaginable, from basic directional arrows to complex mathematical and technical arrows.
             </p>
@@ -173,7 +173,7 @@ export default function ArrowsPage() {
         {/* Quick Tips Section */}
         <section className="mt-12 bg-gradient-to-r from-indigo-50 to-blue-50 p-8 rounded-lg">
           <h2 className="text-2xl font-bold text-gray-100 mb-4">Tips for Using Arrow Symbols</h2>
-          <ul className="text-gray-300 space-y-3">
+          <ul className="text-[var(--text-muted)] space-y-3">
             <li className="flex gap-3">
               <span className="text-blue-600 font-bold">•</span>
               <span><strong>Copy with one click:</strong> Click any arrow symbol to instantly copy it to your clipboard</span>

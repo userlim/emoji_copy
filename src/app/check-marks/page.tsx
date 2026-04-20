@@ -25,7 +25,7 @@ export default function CheckMarksPage() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12">
           <h1 className="text-5xl font-bold text-gray-100 mb-4">Check Mark & Tick Symbols</h1>
-          <p className="text-xl text-gray-300">Copy and paste check marks, tick symbols, crosses, and validation symbols. Use them in lists, forms, documents, and more.</p>
+          <p className="text-xl text-[var(--text-muted)]">Copy and paste check marks, tick symbols, crosses, and validation symbols. Use them in lists, forms, documents, and more.</p>
         </div>
 
         <div className="bg-white/[0.03] rounded-lg shadow-md p-8">
@@ -39,19 +39,19 @@ export default function CheckMarksPage() {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">What's the difference between ✓ and ✔?</h3>
-              <p className="text-gray-300">Both are check mark symbols but have slightly different styles. ✓ is a lighter tick mark while ✔ is a heavier, more prominent check mark. Both serve the same purpose.</p>
+              <p className="text-[var(--text-muted)]">Both are check mark symbols but have slightly different styles. ✓ is a lighter tick mark while ✔ is a heavier, more prominent check mark. Both serve the same purpose.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">Which check mark should I use in documents?</h3>
-              <p className="text-gray-300">For professional documents, ✓ or ✔ work well. For digital forms and applications, ✅ (emoji) is more visually appealing and widely supported.</p>
+              <p className="text-[var(--text-muted)]">For professional documents, ✓ or ✔ work well. For digital forms and applications, ✅ (emoji) is more visually appealing and widely supported.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">Can I use check marks in spreadsheets?</h3>
-              <p className="text-gray-300">Yes! All check mark symbols can be used in spreadsheets like Excel and Google Sheets for marking completed items or yes/no columns.</p>
+              <p className="text-[var(--text-muted)]">Yes! All check mark symbols can be used in spreadsheets like Excel and Google Sheets for marking completed items or yes/no columns.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">What's the difference between check marks and crosses?</h3>
-              <p className="text-gray-300">Check marks (✓, ✔, ✅) indicate approval or completion. Crosses (✗, ✘, ❌) indicate rejection, disapproval, or incomplete items.</p>
+              <p className="text-[var(--text-muted)]">Check marks (✓, ✔, ✅) indicate approval or completion. Crosses (✗, ✘, ❌) indicate rejection, disapproval, or incomplete items.</p>
             </div>
           </div>
         </div>

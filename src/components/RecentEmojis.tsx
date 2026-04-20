@@ -28,7 +28,7 @@ export default function RecentEmojis() {
 
   return (
     <section className="mb-8">
-      <h2 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-3">
+      <h2 className="text-sm font-bold text-[var(--text-muted)] uppercase tracking-widest mb-3">
         Recently Used
       </h2>
       {copied && (
