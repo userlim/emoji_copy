@@ -29,7 +29,7 @@ export default function HandsPage() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12">
           <h1 className="text-5xl font-bold text-gray-100 mb-4">Hand Emoji & Gestures</h1>
-          <p className="text-xl text-[var(--text-muted)]">Copy and paste hand gestures, fingers, pointing, and more. Easy to use - just click any emoji to copy it to your clipboard.</p>
+          <p className="text-xl text-[#8B95A1]">Copy and paste hand gestures, fingers, pointing, and more. Easy to use - just click any emoji to copy it to your clipboard.</p>
         </div>
 
         <div className="space-y-12">
@@ -47,15 +47,15 @@ export default function HandsPage() {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">How do I copy a hand emoji?</h3>
-              <p className="text-[var(--text-muted)]">Simply click on any hand emoji in the grid above. It will be automatically copied to your clipboard.</p>
+              <p className="text-[#8B95A1]">Simply click on any hand emoji in the grid above. It will be automatically copied to your clipboard.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">Can I use hand emojis in all apps?</h3>
-              <p className="text-[var(--text-muted)]">Yes, hand emojis are widely supported across messaging apps, social media, email, and most platforms. Skin tone variations may display differently depending on the device.</p>
+              <p className="text-[#8B95A1]">Yes, hand emojis are widely supported across messaging apps, social media, email, and most platforms. Skin tone variations may display differently depending on the device.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">What's the difference between hand gestures?</h3>
-              <p className="text-[var(--text-muted)]">Hand emojis are grouped by gesture type: waving hands for greetings, pointing fingers for directions, thumbs for approval, and clapping for appreciation.</p>
+              <p className="text-[#8B95A1]">Hand emojis are grouped by gesture type: waving hands for greetings, pointing fingers for directions, thumbs for approval, and clapping for appreciation.</p>
             </div>
           </div>
         </div>

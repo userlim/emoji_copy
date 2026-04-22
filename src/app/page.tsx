@@ -105,7 +105,7 @@ export default function Page() {
         <h1 className="text-2xl font-extrabold mb-1" style={{ color: 'var(--text)' }}>
           Emoji & Symbol Copy Paste
         </h1>
-        <p className="text-[var(--text-secondary)] text-sm">
+        <p className="text-[#4E5968] text-sm">
           3,000+ emojis, arrows, symbols and special characters. Click to copy, paste anywhere.
         </p>
       </div>
@@ -115,7 +115,7 @@ export default function Page() {
 
       {/* Category Grid */}
       <section className="mb-10">
-        <h2 className="text-sm font-bold text-[var(--text-muted)] uppercase tracking-widest mb-3">All Categories</h2>
+        <h2 className="text-sm font-bold text-[#8B95A1] uppercase tracking-widest mb-3">All Categories</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
           {categories.map(cat => (
             <a
@@ -130,9 +130,9 @@ export default function Page() {
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2">
                   <span className="font-bold text-sm" style={{ color: 'var(--text)' }}>{cat.label}</span>
-                  <span className="text-xs text-[var(--text-muted)]">{cat.count}</span>
+                  <span className="text-xs text-[#8B95A1]">{cat.count}</span>
                 </div>
-                <p className="text-xs text-[var(--text-muted)] truncate">{cat.desc}</p>
+                <p className="text-xs text-[#8B95A1] truncate">{cat.desc}</p>
               </div>
             </a>
           ))}
@@ -141,12 +141,12 @@ export default function Page() {
 
       {/* Popular emojis quick access */}
       <section className="mb-10">
-        <h2 className="text-sm font-bold text-[var(--text-muted)] uppercase tracking-widest mb-3">Most Popular — Quick Copy</h2>
+        <h2 className="text-sm font-bold text-[#8B95A1] uppercase tracking-widest mb-3">Most Popular — Quick Copy</h2>
         <EmojiBoard />
       </section>
 
       {/* SEO Content */}
-      <section className="mt-8 space-y-4 text-sm text-[var(--text-muted)] max-w-3xl">
+      <section className="mt-8 space-y-4 text-sm text-[#8B95A1] max-w-3xl">
         <h2 className="text-lg font-bold text-gray-200">About EmojiCopy</h2>
         <p>
           EmojiCopy is the fastest and most complete emoji and symbol copy-paste tool on the web.
@@ -160,53 +160,53 @@ export default function Page() {
           and smiley faces (😀 😂 🥰). We also offer math symbols, currency signs, box drawing characters,
           music notes, brackets, and kaomoji text faces.
         </p>
-        <details className="border border-[rgba(255,255,255,0.06)] rounded-lg">
-          <summary className="px-4 py-3 cursor-pointer font-semibold text-[var(--text-muted)]">How do I copy an emoji?</summary>
+        <details className="border border-[#F2F4F6] rounded-lg">
+          <summary className="px-4 py-3 cursor-pointer font-semibold text-[#8B95A1]">How do I copy an emoji?</summary>
           <p className="px-4 pb-3">Click on any emoji or symbol and it gets copied automatically. Then paste with Ctrl+V (Windows) or Cmd+V (Mac). It works in any text field.</p>
         </details>
-        <details className="border border-[rgba(255,255,255,0.06)] rounded-lg">
-          <summary className="px-4 py-3 cursor-pointer font-semibold text-[var(--text-muted)]">Do these work on all platforms?</summary>
+        <details className="border border-[#F2F4F6] rounded-lg">
+          <summary className="px-4 py-3 cursor-pointer font-semibold text-[#8B95A1]">Do these work on all platforms?</summary>
           <p className="px-4 pb-3">Yes — Instagram, Twitter/X, Facebook, TikTok, WhatsApp, Discord, Slack, Gmail, Google Docs, Microsoft Word, and everywhere else that supports text.</p>
         </details>
-        <details className="border border-[rgba(255,255,255,0.06)] rounded-lg">
-          <summary className="px-4 py-3 cursor-pointer font-semibold text-[var(--text-muted)]">What is the ※ (reference mark) symbol?</summary>
+        <details className="border border-[#F2F4F6] rounded-lg">
+          <summary className="px-4 py-3 cursor-pointer font-semibold text-[#8B95A1]">What is the ※ (reference mark) symbol?</summary>
           <p className="px-4 pb-3">The ※ symbol is called &quot;당구장 기호&quot; in Korean and &quot;kome&quot; in Japanese. It marks footnotes and special notes. Visit our dedicated Reference Marks page for 200+ similar symbols.</p>
         </details>
-        <details className="border border-[rgba(255,255,255,0.06)] rounded-lg">
-          <summary className="px-4 py-3 cursor-pointer font-semibold text-[var(--text-muted)]">How many arrows do you have?</summary>
+        <details className="border border-[#F2F4F6] rounded-lg">
+          <summary className="px-4 py-3 cursor-pointer font-semibold text-[#8B95A1]">How many arrows do you have?</summary>
           <p className="px-4 pb-3">Over 370 arrow symbols — basic (←→↑↓), double (⇐⇒⇔), heavy (➤➜➡), harpoon, supplemental, and many more. The most comprehensive arrow collection online.</p>
         </details>
       </section>
 
       {/* Extended Content Section for SEO depth */}
       <section id="content-depth-section" className="mt-20 max-w-3xl mx-auto px-6 relative z-[1]">
-        <h2 className="text-h2 mb-6 text-[var(--text-primary)]">Complete Guide</h2>
+        <h2 className="text-h2 mb-6 text-[#191F28]">Complete Guide</h2>
         
             <div className="mb-6">
-              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">What Are Emojis and How Do They Work?</h3>
-              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Emojis are digital pictographs standardized by the Unicode Consortium, an international organization that maintains text encoding standards. Each emoji has a unique Unicode code point — for example, the smiling face 😊 is U+1F60A. When you copy an emoji from our tool, you're copying this Unicode character, which is then rendered by the receiving device's operating system into its platform-specific visual style.` }} />
+              <h3 className="text-h3 mb-2 text-[#191F28]">What Are Emojis and How Do They Work?</h3>
+              <p className="text-[#4E5968] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Emojis are digital pictographs standardized by the Unicode Consortium, an international organization that maintains text encoding standards. Each emoji has a unique Unicode code point — for example, the smiling face 😊 is U+1F60A. When you copy an emoji from our tool, you're copying this Unicode character, which is then rendered by the receiving device's operating system into its platform-specific visual style.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">The History and Evolution of Emojis</h3>
-              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The first emoji set was created in 1999 by Shigetaka Kurita for the Japanese mobile carrier NTT DoCoMo. The original set contained just 176 12×12 pixel icons. In 2010, Unicode 6.0 officially incorporated 722 emojis, enabling cross-platform compatibility. As of Unicode 15.1 (2023), there are over 3,600 emojis including skin tone modifiers, gender variants, and flag sequences. New emojis are proposed and approved annually through the Unicode Consortium's review process.` }} />
+              <h3 className="text-h3 mb-2 text-[#191F28]">The History and Evolution of Emojis</h3>
+              <p className="text-[#4E5968] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The first emoji set was created in 1999 by Shigetaka Kurita for the Japanese mobile carrier NTT DoCoMo. The original set contained just 176 12×12 pixel icons. In 2010, Unicode 6.0 officially incorporated 722 emojis, enabling cross-platform compatibility. As of Unicode 15.1 (2023), there are over 3,600 emojis including skin tone modifiers, gender variants, and flag sequences. New emojis are proposed and approved annually through the Unicode Consortium's review process.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">How Emojis Display Differently Across Platforms</h3>
-              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The same Unicode emoji can look quite different on Apple, Google, Samsung, Microsoft, and other platforms. Each company designs their own emoji artwork while following Unicode's general description. For example, the "pistol" emoji (🔫) was changed from a realistic firearm to a water gun across all major platforms between 2016-2018. Our tool displays emojis in your browser's default style, but they may look different when pasted into other apps.` }} />
+              <h3 className="text-h3 mb-2 text-[#191F28]">How Emojis Display Differently Across Platforms</h3>
+              <p className="text-[#4E5968] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The same Unicode emoji can look quite different on Apple, Google, Samsung, Microsoft, and other platforms. Each company designs their own emoji artwork while following Unicode's general description. For example, the "pistol" emoji (🔫) was changed from a realistic firearm to a water gun across all major platforms between 2016-2018. Our tool displays emojis in your browser's default style, but they may look different when pasted into other apps.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">Using Emojis Effectively in Communication</h3>
-              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Research from the University of Cambridge found that emoji use in digital communication increases perceived warmth and emotional connection. In marketing, emails with emojis in subject lines see 56% higher open rates. However, overuse or inappropriate emoji placement can reduce perceived professionalism. Best practices include using emojis to complement rather than replace text, being mindful of cultural differences in emoji interpretation, and limiting emoji use in formal contexts.` }} />
+              <h3 className="text-h3 mb-2 text-[#191F28]">Using Emojis Effectively in Communication</h3>
+              <p className="text-[#4E5968] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `Research from the University of Cambridge found that emoji use in digital communication increases perceived warmth and emotional connection. In marketing, emails with emojis in subject lines see 56% higher open rates. However, overuse or inappropriate emoji placement can reduce perceived professionalism. Best practices include using emojis to complement rather than replace text, being mindful of cultural differences in emoji interpretation, and limiting emoji use in formal contexts.` }} />
             </div>
             <div className="mb-6">
-              <h3 className="text-h3 mb-2 text-[var(--text-primary)]">Emoji Accessibility and Inclusion</h3>
-              <p className="text-[var(--text-secondary)] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The Unicode Consortium has made significant efforts toward emoji inclusivity. Skin tone modifiers (introduced in 2015) allow users to select from five skin tones plus the default yellow. Gender-neutral emoji options were added in 2019. Disability-related emojis (wheelchair, prosthetic limbs, hearing aids) were introduced in 2019. Mixed skin-tone couple emojis were added in 2021. These additions reflect the ongoing effort to make emoji communication more representative and inclusive.` }} />
+              <h3 className="text-h3 mb-2 text-[#191F28]">Emoji Accessibility and Inclusion</h3>
+              <p className="text-[#4E5968] leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: `The Unicode Consortium has made significant efforts toward emoji inclusivity. Skin tone modifiers (introduced in 2015) allow users to select from five skin tones plus the default yellow. Gender-neutral emoji options were added in 2019. Disability-related emojis (wheelchair, prosthetic limbs, hearing aids) were introduced in 2019. Mixed skin-tone couple emojis were added in 2021. These additions reflect the ongoing effort to make emoji communication more representative and inclusive.` }} />
             </div>
       </section>
     
       {/* Keyword-Optimized Content */}
       <section id="keyword-seo-section" className="mt-12 max-w-3xl mx-auto px-6 pb-16 relative z-[1]">
-        <p className="text-sm text-[var(--text-muted)] leading-relaxed">
+        <p className="text-sm text-[#8B95A1] leading-relaxed">
           Copy and paste 3,000+ emojis with one click. Browse heart emojis, smiley face emojis, cute emojis, and the latest new emoji for 2026. Perfect emoji keyboard for Instagram, social media, and messaging. Search, find, and copy any emoji symbol instantly.
         </p>
 <div className="mt-3 flex flex-wrap gap-2">

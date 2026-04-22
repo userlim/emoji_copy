@@ -30,7 +30,7 @@ export default function SquaresPage() {
       <main className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-12">
           <h1 className="text-5xl font-bold text-green-600 mb-4">Square Symbols & Characters</h1>
-          <p className="text-xl text-[var(--text-muted)]">Copy 50+ square symbols in every style. From solid filled squares ■ to hollow squares □, colored emoji squares, checkboxes, and patterned variants. Perfect for lists, interfaces, and decorative designs.</p>
+          <p className="text-xl text-[#8B95A1]">Copy 50+ square symbols in every style. From solid filled squares ■ to hollow squares □, colored emoji squares, checkboxes, and patterned variants. Perfect for lists, interfaces, and decorative designs.</p>
         </header>
 
         {/* Filled Squares Section */}
@@ -39,7 +39,7 @@ export default function SquaresPage() {
             <h2 className="text-3xl font-bold text-gray-100">■ ◼ ⬛ Filled Squares</h2>
             <span className="text-sm bg-green-100 text-green-700 px-3 py-1 rounded-full">{filledSquares.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Solid filled square symbols in black and bright colors</p>
+          <p className="text-[#8B95A1] mb-6">Solid filled square symbols in black and bright colors</p>
           <CopyGrid items={filledSquares} />
         </section>
 
@@ -49,7 +49,7 @@ export default function SquaresPage() {
             <h2 className="text-3xl font-bold text-gray-100">□ ◻ ⬜ Empty Squares</h2>
             <span className="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">{emptySquares.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Hollow and empty square variants perfect for checkboxes</p>
+          <p className="text-[#8B95A1] mb-6">Hollow and empty square variants perfect for checkboxes</p>
           <CopyGrid items={emptySquares} />
         </section>
 
@@ -59,7 +59,7 @@ export default function SquaresPage() {
             <h2 className="text-3xl font-bold text-gray-100">▪ ▫ Small Squares</h2>
             <span className="text-sm bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full">{smallSquares.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Compact square symbols for bullet points and small indicators</p>
+          <p className="text-[#8B95A1] mb-6">Compact square symbols for bullet points and small indicators</p>
           <CopyGrid items={smallSquares} />
         </section>
 
@@ -69,7 +69,7 @@ export default function SquaresPage() {
             <h2 className="text-3xl font-bold text-gray-100">▤ ▥ ▦ Patterned Squares</h2>
             <span className="text-sm bg-[rgba(var(--accent-rgb),0.12)] text-[var(--accent)] px-3 py-1 rounded-full">{patternedSquares.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Squares with horizontal, vertical, and cross-hatch patterns</p>
+          <p className="text-[#8B95A1] mb-6">Squares with horizontal, vertical, and cross-hatch patterns</p>
           <CopyGrid items={patternedSquares} />
         </section>
 
@@ -79,7 +79,7 @@ export default function SquaresPage() {
             <h2 className="text-3xl font-bold text-gray-100">🟥 🟧 🟨 Colored Emoji Squares</h2>
             <span className="text-sm bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full">{coloredSquares.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Bright colored square emoji in red, orange, yellow, green, blue, and more</p>
+          <p className="text-[#8B95A1] mb-6">Bright colored square emoji in red, orange, yellow, green, blue, and more</p>
           <CopyGrid items={coloredSquares} />
         </section>
 
@@ -89,7 +89,7 @@ export default function SquaresPage() {
             <h2 className="text-3xl font-bold text-gray-100">❏ ❐ ❑ Decorative Squares</h2>
             <span className="text-sm bg-pink-100 text-pink-700 px-3 py-1 rounded-full">{decorativeSquares.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Ornamental square variants with lines and borders</p>
+          <p className="text-[#8B95A1] mb-6">Ornamental square variants with lines and borders</p>
           <CopyGrid items={decorativeSquares} />
         </section>
 
@@ -99,14 +99,14 @@ export default function SquaresPage() {
             <h2 className="text-3xl font-bold text-gray-100">⧫ ⧪ ⬟ Special Squares</h2>
             <span className="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full">{specialSquares.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Geometric and specialized square-like characters</p>
+          <p className="text-[#8B95A1] mb-6">Geometric and specialized square-like characters</p>
           <CopyGrid items={specialSquares} />
         </section>
 
         {/* SEO Content */}
         <section className="mt-20 bg-gradient-to-r from-green-50 to-emerald-50 p-8 rounded-lg">
           <h2 className="text-2xl font-bold text-gray-100 mb-6">About Square Symbols</h2>
-          <div className="text-[var(--text-muted)] space-y-4">
+          <div className="text-[#8B95A1] space-y-4">
             <p>
               Square symbols are fundamental Unicode characters used in writing, design, interfaces, and mathematics. Our collection of 50+ square symbols covers every style and purpose, from basic solid squares ■ to hollow variants □, colored emoji squares, patterned squares, and special geometric characters.
             </p>
@@ -125,7 +125,7 @@ export default function SquaresPage() {
         {/* Quick Tips Section */}
         <section className="mt-12 bg-gradient-to-r from-emerald-50 to-green-50 p-8 rounded-lg">
           <h2 className="text-2xl font-bold text-gray-100 mb-4">Tips for Using Square Symbols</h2>
-          <ul className="text-[var(--text-muted)] space-y-3">
+          <ul className="text-[#8B95A1] space-y-3">
             <li className="flex gap-3">
               <span className="text-green-600 font-bold">■</span>
               <span><strong>Copy with one click:</strong> Click any square symbol to instantly copy it to your clipboard</span>

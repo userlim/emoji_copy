@@ -34,7 +34,7 @@ export default function ZodiacPage() {
         <h1 className="text-4xl font-bold text-center mb-2 text-gray-100">
           Zodiac Symbols Copy and Paste
         </h1>
-        <p className="text-center text-[var(--text-muted)] mb-12">
+        <p className="text-center text-[#8B95A1] mb-12">
           Discover and copy zodiac symbols, moon phases, and celestial symbols for astrology and spiritual content
         </p>
 
@@ -50,10 +50,10 @@ export default function ZodiacPage() {
             <h2 className="text-2xl font-bold mb-6 text-gray-200">♈ Zodiac Signs & Dates</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-4">
               {zodiacSigns.map((sign) => (
-                <div key={sign.name} className="bg-white/[0.03] rounded-lg p-4 border border-[rgba(255,255,255,0.06)] text-center">
+                <div key={sign.name} className="bg-white/[0.03] rounded-lg p-4 border border-[#F2F4F6] text-center">
                   <div className="text-3xl mb-1">{sign.symbol}</div>
                   <div className="text-sm font-bold text-gray-100">{sign.name}</div>
-                  <div className="text-xs text-[var(--text-secondary)]">{sign.dates}</div>
+                  <div className="text-xs text-[#4E5968]">{sign.dates}</div>
                 </div>
               ))}
             </div>
@@ -64,7 +64,7 @@ export default function ZodiacPage() {
         {/* SEO Content */}
         <section className="mt-16 bg-white/[0.03] rounded-lg shadow-sm p-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-100">Zodiac Symbols Copy and Paste Guide</h2>
-          <div className="prose prose-sm max-w-none text-[var(--text-muted)] space-y-4">
+          <div className="prose prose-sm max-w-none text-[#8B95A1] space-y-4">
             <p>
               Zodiac symbols are powerful representations of the astrological signs used for horoscopes, personality profiles, and spiritual exploration. From Aries ♈ to Pisces ♓, each symbol represents unique characteristics and celestial influences.
             </p>

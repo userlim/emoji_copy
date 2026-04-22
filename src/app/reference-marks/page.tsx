@@ -36,7 +36,7 @@ export default function ReferenceMarksPage() {
       <main className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-12">
           <h1 className="text-5xl font-bold text-purple-600 mb-4">※ Reference Marks & Special Symbols</h1>
-          <p className="text-xl text-[var(--text-muted)]">Copy 당구장 기호 (reference marks), daggers, asterisks, section signs, and special text symbols. Perfect for citations, footnotes, and decorative text.</p>
+          <p className="text-xl text-[#8B95A1]">Copy 당구장 기호 (reference marks), daggers, asterisks, section signs, and special text symbols. Perfect for citations, footnotes, and decorative text.</p>
         </header>
 
         {/* Reference Marks & Asterisks Section */}
@@ -45,7 +45,7 @@ export default function ReferenceMarksPage() {
             <h2 className="text-3xl font-bold text-gray-100">※ Reference Marks & Asterisks</h2>
             <span className="text-sm bg-[rgba(var(--accent-rgb),0.12)] text-[var(--accent)] px-3 py-1 rounded-full">{referenceMarks.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Universal reference marks including the iconic ※ (당구장 기호) used in Korean and Japanese typography</p>
+          <p className="text-[#8B95A1] mb-6">Universal reference marks including the iconic ※ (당구장 기호) used in Korean and Japanese typography</p>
           <CopyGrid items={referenceMarks} />
         </section>
 
@@ -55,7 +55,7 @@ export default function ReferenceMarksPage() {
             <h2 className="text-3xl font-bold text-gray-100">† Daggers & Footnote Marks</h2>
             <span className="text-sm bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full">{daggers.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Dagger symbols (obelus) traditionally used for footnotes and annotations in documents</p>
+          <p className="text-[#8B95A1] mb-6">Dagger symbols (obelus) traditionally used for footnotes and annotations in documents</p>
           <CopyGrid items={daggers} />
         </section>
 
@@ -65,7 +65,7 @@ export default function ReferenceMarksPage() {
             <h2 className="text-3xl font-bold text-gray-100">§ Section & Paragraph Signs</h2>
             <span className="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">{sectionSigns.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Section signs (pilcrow), paragraph marks, and musical notation symbols used in legal and academic documents</p>
+          <p className="text-[#8B95A1] mb-6">Section signs (pilcrow), paragraph marks, and musical notation symbols used in legal and academic documents</p>
           <CopyGrid items={sectionSigns} />
         </section>
 
@@ -75,7 +75,7 @@ export default function ReferenceMarksPage() {
             <h2 className="text-3xl font-bold text-gray-100">· Punctuation & Text Marks</h2>
             <span className="text-sm bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full">{punctuation.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Special punctuation marks, quotation variants, and typographic ornaments</p>
+          <p className="text-[#8B95A1] mb-6">Special punctuation marks, quotation variants, and typographic ornaments</p>
           <CopyGrid items={punctuation} />
         </section>
 
@@ -85,7 +85,7 @@ export default function ReferenceMarksPage() {
             <h2 className="text-3xl font-bold text-gray-100">© Copyright & Legal Marks</h2>
             <span className="text-sm bg-green-100 text-green-700 px-3 py-1 rounded-full">{copyrightLegal.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Copyright, trademark, registered, and other legal/technical symbols</p>
+          <p className="text-[#8B95A1] mb-6">Copyright, trademark, registered, and other legal/technical symbols</p>
           <CopyGrid items={copyrightLegal} />
         </section>
 
@@ -95,7 +95,7 @@ export default function ReferenceMarksPage() {
             <h2 className="text-3xl font-bold text-gray-100">❖ Dingbat & Ornament Marks</h2>
             <span className="text-sm bg-rose-100 text-rose-700 px-3 py-1 rounded-full">{dingbats.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Decorative dingbat symbols, ornamental marks, and fancy text decorations</p>
+          <p className="text-[#8B95A1] mb-6">Decorative dingbat symbols, ornamental marks, and fancy text decorations</p>
           <CopyGrid items={dingbats} />
         </section>
 
@@ -105,7 +105,7 @@ export default function ReferenceMarksPage() {
             <h2 className="text-3xl font-bold text-gray-100">㊀ Korean/CJK Reference Marks</h2>
             <span className="text-sm bg-amber-100 text-amber-700 px-3 py-1 rounded-full">{koreanCjk.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Specialized reference marks and enclosed characters used in Korean, Chinese, and Japanese typography</p>
+          <p className="text-[#8B95A1] mb-6">Specialized reference marks and enclosed characters used in Korean, Chinese, and Japanese typography</p>
           <CopyGrid items={koreanCjk} />
         </section>
 
@@ -115,7 +115,7 @@ export default function ReferenceMarksPage() {
             <h2 className="text-3xl font-bold text-gray-100">① Enclosed Numbers (1-20)</h2>
             <span className="text-sm bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full">{enclosedNumbers.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Numbers enclosed in circles, useful for lists, rankings, and numbered items</p>
+          <p className="text-[#8B95A1] mb-6">Numbers enclosed in circles, useful for lists, rankings, and numbered items</p>
           <CopyGrid items={enclosedNumbers} />
         </section>
 
@@ -125,7 +125,7 @@ export default function ReferenceMarksPage() {
             <h2 className="text-3xl font-bold text-gray-100">Ⓐ Enclosed Uppercase Letters</h2>
             <span className="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full">{enclosedUppercase.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Uppercase letters enclosed in circles for categorization and highlighting</p>
+          <p className="text-[#8B95A1] mb-6">Uppercase letters enclosed in circles for categorization and highlighting</p>
           <CopyGrid items={enclosedUppercase} />
         </section>
 
@@ -135,14 +135,14 @@ export default function ReferenceMarksPage() {
             <h2 className="text-3xl font-bold text-gray-100">ⓐ Enclosed Lowercase Letters</h2>
             <span className="text-sm bg-red-100 text-red-700 px-3 py-1 rounded-full">{enclosedLowercase.length} symbols</span>
           </div>
-          <p className="text-[var(--text-muted)] mb-6">Lowercase letters enclosed in circles for modern and creative text decoration</p>
+          <p className="text-[#8B95A1] mb-6">Lowercase letters enclosed in circles for modern and creative text decoration</p>
           <CopyGrid items={enclosedLowercase} />
         </section>
 
         {/* SEO Content */}
         <section className="mt-20 bg-gradient-to-r from-purple-50 to-blue-50 p-8 rounded-lg">
           <h2 className="text-2xl font-bold text-gray-100 mb-4">About Reference Marks & Special Symbols</h2>
-          <div className="text-[var(--text-muted)] space-y-4">
+          <div className="text-[#8B95A1] space-y-4">
             <p>
               Reference marks are essential typographic symbols used across various languages and writing systems. The most iconic is the※ symbol, known as "당구장 기호" in Korean, which translates to "billiard hall mark." Despite its name, this symbol is widely used in Korean, Japanese, and Chinese typography as a general reference mark, footnote indicator, or decorative element.
             </p>

@@ -25,7 +25,7 @@ export default function FoodPage() {
         <h1 className="text-4xl font-bold text-center mb-2 text-gray-100">
           Food & Drink Emoji Copy and Paste
         </h1>
-        <p className="text-center text-[var(--text-muted)] mb-12">
+        <p className="text-center text-[#8B95A1] mb-12">
           Discover and copy 150+ food and drink emojis for every meal and occasion
         </p>
 
@@ -58,7 +58,7 @@ export default function FoodPage() {
         {/* SEO Content */}
         <section className="mt-16 bg-white/[0.03] rounded-lg shadow-sm p-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-100">Food and Drink Emoji Copy and Paste Guide</h2>
-          <div className="prose prose-sm max-w-none text-[var(--text-muted)] space-y-4">
+          <div className="prose prose-sm max-w-none text-[#8B95A1] space-y-4">
             <p>
               Food and drink emojis are essential for expressing your culinary interests and dining experiences. Whether you're sharing a pizza 🍕, coffee ☕, or sushi 🍣, we have the perfect emoji for every food situation.
             </p>

@@ -25,7 +25,7 @@ export default function CurrencyPage() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12">
           <h1 className="text-5xl font-bold text-gray-100 mb-4">Currency Symbols & Money Signs</h1>
-          <p className="text-xl text-[var(--text-muted)]">Copy and paste currency symbols from around the world. Find dollar signs, euros, pounds, yen, bitcoin, and international money symbols.</p>
+          <p className="text-xl text-[#8B95A1]">Copy and paste currency symbols from around the world. Find dollar signs, euros, pounds, yen, bitcoin, and international money symbols.</p>
         </div>
 
         <div className="bg-white/[0.03] rounded-lg shadow-md p-8">
@@ -39,23 +39,23 @@ export default function CurrencyPage() {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">What's the difference between $ and $?</h3>
-              <p className="text-[var(--text-muted)]">These are the same symbol - the dollar sign. The slight visual variations depend on your font or device. Both represent US dollars and most other dollar currencies.</p>
+              <p className="text-[#8B95A1]">These are the same symbol - the dollar sign. The slight visual variations depend on your font or device. Both represent US dollars and most other dollar currencies.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">Which currency symbol should I use for which country?</h3>
-              <p className="text-[var(--text-muted)]">The $ symbol is used for US dollars, Canadian dollars, and many other countries. € is for the Euro, £ for British pounds, ¥ for Japanese yen, and so on. Use the official symbol of the currency you're referencing.</p>
+              <p className="text-[#8B95A1]">The $ symbol is used for US dollars, Canadian dollars, and many other countries. € is for the Euro, £ for British pounds, ¥ for Japanese yen, and so on. Use the official symbol of the currency you're referencing.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">Can I use currency symbols in social media?</h3>
-              <p className="text-[var(--text-muted)]">Yes! Currency symbols work on all social media platforms, messaging apps, and most websites. They're great for posts about pricing, financial content, and business topics.</p>
+              <p className="text-[#8B95A1]">Yes! Currency symbols work on all social media platforms, messaging apps, and most websites. They're great for posts about pricing, financial content, and business topics.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">What is the Bitcoin symbol?</h3>
-              <p className="text-[var(--text-muted)]">The Bitcoin symbol is ₿. It's a standard Unicode character and represents Bitcoin (BTC). You can also see it displayed as 🪙 in emoji form.</p>
+              <p className="text-[#8B95A1]">The Bitcoin symbol is ₿. It's a standard Unicode character and represents Bitcoin (BTC). You can also see it displayed as 🪙 in emoji form.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">Are all these symbols widely supported?</h3>
-              <p className="text-[var(--text-muted)]">Most currency symbols are widely supported across devices and applications. Some less common ones may not display on older devices, but the major currencies ($, €, £, ¥, ₿) work everywhere.</p>
+              <p className="text-[#8B95A1]">Most currency symbols are widely supported across devices and applications. Some less common ones may not display on older devices, but the major currencies ($, €, £, ¥, ₿) work everywhere.</p>
             </div>
           </div>
         </div>

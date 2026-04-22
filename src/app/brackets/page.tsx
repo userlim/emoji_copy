@@ -31,7 +31,7 @@ export default function BracketsPage() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12">
           <h1 className="text-5xl font-bold text-gray-100 mb-4">Bracket Symbols</h1>
-          <p className="text-xl text-[var(--text-muted)]">Copy and paste bracket symbols including round, square, curly, angle, CJK, and decorative brackets. Perfect for writing, coding, design, and international text.</p>
+          <p className="text-xl text-[#8B95A1]">Copy and paste bracket symbols including round, square, curly, angle, CJK, and decorative brackets. Perfect for writing, coding, design, and international text.</p>
         </div>
 
         <div className="space-y-12">
@@ -49,23 +49,23 @@ export default function BracketsPage() {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">What's the difference between brackets and parentheses?</h3>
-              <p className="text-[var(--text-muted)]">Parentheses ( ) are round brackets used for additional information or grouping. Square brackets [ ] are used for clarification or omitted text. Curly braces { } are mainly used in programming. Angle brackets &lt; &gt; are used in programming and markup languages.</p>
+              <p className="text-[#8B95A1]">Parentheses ( ) are round brackets used for additional information or grouping. Square brackets [ ] are used for clarification or omitted text. Curly braces { } are mainly used in programming. Angle brackets &lt; &gt; are used in programming and markup languages.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">When should I use CJK brackets?</h3>
-              <p className="text-[var(--text-muted)]">CJK brackets (【】「」『』) are primarily used in Chinese, Japanese, and Korean text. They follow the typography conventions of these languages and should be used when writing in these languages.</p>
+              <p className="text-[#8B95A1]">CJK brackets (【】「」『』) are primarily used in Chinese, Japanese, and Korean text. They follow the typography conventions of these languages and should be used when writing in these languages.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">What are full-width brackets used for?</h3>
-              <p className="text-[var(--text-muted)]">Full-width brackets are used in East Asian typography to match the width of full-width characters. They're commonly used in Japanese, Chinese, and Korean text.</p>
+              <p className="text-[#8B95A1]">Full-width brackets are used in East Asian typography to match the width of full-width characters. They're commonly used in Japanese, Chinese, and Korean text.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">Can I use decorative brackets in documents?</h3>
-              <p className="text-[var(--text-muted)]">Decorative brackets are great for adding visual interest to documents, poetry, or design work. They work in most applications but may need special fonts for older systems.</p>
+              <p className="text-[#8B95A1]">Decorative brackets are great for adding visual interest to documents, poetry, or design work. They work in most applications but may need special fonts for older systems.</p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-100 mb-2">Do I need to use matching closing brackets?</h3>
-              <p className="text-[var(--text-muted)]">Yes, for proper formatting and grammar, you should always use matching opening and closing brackets. For example, if you open with (, close with ).</p>
+              <p className="text-[#8B95A1]">Yes, for proper formatting and grammar, you should always use matching opening and closing brackets. For example, if you open with (, close with ).</p>
             </div>
           </div>
         </div>
