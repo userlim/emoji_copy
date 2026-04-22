@@ -32,11 +32,11 @@ const cats = [
 export default function CategoryNav({ current }: { current?: string }) {
   return (
     <div className="flex flex-wrap gap-1.5 mb-6">
-      <a href="/" className={`shrink-0 px-3 py-1.5 rounded-full text-sm font-semibold transition-colors ${!current ? 'text-[#191F28]' : 'text-[#8B95A1] bg-white/[0.04] hover:bg-[#F7F8FA]'}`}
+      <a href="/" className={`shrink-0 px-3 py-1.5 rounded-full text-sm font-semibold transition-colors ${!current ? 'text-white' : 'text-gray-600 bg-gray-100 hover:bg-gray-200'}`}
         style={!current ? { background: 'var(--accent)' } : {}}>🏠 Home</a>
       {cats.map(c => (
         <a key={c.href} href={c.href}
-          className={`shrink-0 px-3 py-1.5 rounded-full text-sm font-semibold transition-colors ${current === c.href ? 'text-[#191F28]' : 'text-[#8B95A1] bg-white/[0.04] hover:bg-[#F7F8FA]'}`}
+          className={`shrink-0 px-3 py-1.5 rounded-full text-sm font-semibold transition-colors ${current === c.href ? 'text-white' : 'text-gray-600 bg-gray-100 hover:bg-gray-200'}`}
           style={current === c.href ? { background: 'var(--accent)' } : {}}>
           {c.icon} {c.label}
         </a>

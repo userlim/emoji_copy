@@ -24,89 +24,89 @@ const miscSymbols = ['☮', '☯', '♻', '♿', '⚡', '⚰', '⚱', '⚗', '�
 
 export default function SymbolsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-violet-50 to-white">
+    <div className="min-h-screen">
       <CategoryNav current="/symbols" />
 
       <main className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-12">
           <h1 className="text-5xl font-bold text-violet-600 mb-4">Special Symbols & Signs</h1>
-          <p className="text-xl text-[#8B95A1]">Copy 100+ special symbols including card suits ♠ ♣ ♥ ♦, zodiac signs, chess pieces ♔ ♕, gender symbols ♀ ♂, religious symbols ✝, warning signs ⚠, and more. Perfect for documents, designs, and specialized content.</p>
+          <p className="text-xl text-gray-700">Copy 100+ special symbols including card suits ♠ ♣ ♥ ♦, zodiac signs, chess pieces ♔ ♕, gender symbols ♀ ♂, religious symbols ✝, warning signs ⚠, and more. Perfect for documents, designs, and specialized content.</p>
         </header>
 
         {/* Card Suits Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">♠ ♣ ♥ ♦ Card Suits</h2>
+            <h2 className="text-3xl font-bold text-gray-900">♠ ♣ ♥ ♦ Card Suits</h2>
             <span className="text-sm bg-red-100 text-red-700 px-3 py-1 rounded-full">{cardSuits.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">Playing card suit symbols in filled and outlined variants</p>
+          <p className="text-gray-600 mb-6">Playing card suit symbols in filled and outlined variants</p>
           <CopyGrid items={cardSuits} />
         </section>
 
         {/* Zodiac Signs Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">♈ ♉ ♊ Zodiac Signs</h2>
+            <h2 className="text-3xl font-bold text-gray-900">♈ ♉ ♊ Zodiac Signs</h2>
             <span className="text-sm bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full">{zodiacSigns.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">All twelve zodiac constellation symbols plus Ophiuchus</p>
+          <p className="text-gray-600 mb-6">All twelve zodiac constellation symbols plus Ophiuchus</p>
           <CopyGrid items={zodiacSigns} />
         </section>
 
         {/* Chess Pieces Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">♔ ♕ ♖ Chess Pieces</h2>
+            <h2 className="text-3xl font-bold text-gray-900">♔ ♕ ♖ Chess Pieces</h2>
             <span className="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">{chessPieces.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">White and black chess piece symbols for all six piece types</p>
+          <p className="text-gray-600 mb-6">White and black chess piece symbols for all six piece types</p>
           <CopyGrid items={chessPieces} />
         </section>
 
         {/* Gender Symbols Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">♀ ♂ ⚧ Gender Symbols</h2>
+            <h2 className="text-3xl font-bold text-gray-900">♀ ♂ ⚧ Gender Symbols</h2>
             <span className="text-sm bg-pink-100 text-pink-700 px-3 py-1 rounded-full">{genderSymbols.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">Gender and sexuality symbols for inclusive representation</p>
+          <p className="text-gray-600 mb-6">Gender and sexuality symbols for inclusive representation</p>
           <CopyGrid items={genderSymbols} />
         </section>
 
         {/* Religious Symbols Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">✝ ☦ ☪ Religious Symbols</h2>
-            <span className="text-sm bg-[rgba(var(--accent-rgb),0.12)] text-[var(--accent)] px-3 py-1 rounded-full">{religionSymbols.length} symbols</span>
+            <h2 className="text-3xl font-bold text-gray-900">✝ ☦ ☪ Religious Symbols</h2>
+            <span className="text-sm bg-purple-100 text-purple-700 px-3 py-1 rounded-full">{religionSymbols.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">Sacred and religious symbols from various world faiths and traditions</p>
+          <p className="text-gray-600 mb-6">Sacred and religious symbols from various world faiths and traditions</p>
           <CopyGrid items={religionSymbols} />
         </section>
 
         {/* Warning & Alert Symbols Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">⚠ ☠ ☢ Warning Signs</h2>
+            <h2 className="text-3xl font-bold text-gray-900">⚠ ☠ ☢ Warning Signs</h2>
             <span className="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full">{warningSymbols.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">Warning, hazard, and alert symbols for caution and danger indication</p>
+          <p className="text-gray-600 mb-6">Warning, hazard, and alert symbols for caution and danger indication</p>
           <CopyGrid items={warningSymbols} />
         </section>
 
         {/* Miscellaneous Symbols Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">☮ ♻ ⚡ Miscellaneous Symbols</h2>
+            <h2 className="text-3xl font-bold text-gray-900">☮ ♻ ⚡ Miscellaneous Symbols</h2>
             <span className="text-sm bg-green-100 text-green-700 px-3 py-1 rounded-full">{miscSymbols.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">Special purpose symbols including peace, recycling, electricity, and more</p>
+          <p className="text-gray-600 mb-6">Special purpose symbols including peace, recycling, electricity, and more</p>
           <CopyGrid items={miscSymbols} />
         </section>
 
         {/* SEO Content */}
         <section className="mt-20 bg-gradient-to-r from-violet-50 to-purple-50 p-8 rounded-lg">
-          <h2 className="text-2xl font-bold text-gray-100 mb-6">About Special Symbols</h2>
-          <div className="text-[#8B95A1] space-y-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">About Special Symbols</h2>
+          <div className="text-gray-700 space-y-4">
             <p>
               Special symbols are specialized Unicode characters representing concepts, objects, and ideas from games, astronomy, religion, gender identity, warning systems, and more. Our collection of 100+ special symbols covers card suits ♠ ♣ ♥ ♦, zodiac signs ♈ through ♓, chess pieces ♔ ♕, gender symbols ♀ ♂, religious symbols from multiple faiths, warning signs, and miscellaneous specialized characters.
             </p>
@@ -124,8 +124,8 @@ export default function SymbolsPage() {
 
         {/* Quick Tips Section */}
         <section className="mt-12 bg-gradient-to-r from-purple-50 to-violet-50 p-8 rounded-lg">
-          <h2 className="text-2xl font-bold text-gray-100 mb-4">Tips for Using Special Symbols</h2>
-          <ul className="text-[#8B95A1] space-y-3">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Tips for Using Special Symbols</h2>
+          <ul className="text-gray-700 space-y-3">
             <li className="flex gap-3">
               <span className="text-violet-600 font-bold">♠</span>
               <span><strong>Copy with one click:</strong> Click any special symbol to instantly copy it to your clipboard</span>

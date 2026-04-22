@@ -26,99 +26,99 @@ const specialWeather = ['☄', '★', '☇', '☈', '🌡', '🔥'];
 
 export default function WeatherPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white">
+    <div className="min-h-screen">
       <CategoryNav current="/weather" />
 
       <main className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-12">
           <h1 className="text-5xl font-bold text-cyan-600 mb-4">Weather Symbols & Sky Elements</h1>
-          <p className="text-xl text-[#8B95A1]">Copy 60+ weather symbols including sun ☀, clouds ☁, rain ☔, snow ❄, moon phases, rainbows 🌈, and atmospheric effects. Perfect for weather apps, forecasts, and climate content.</p>
+          <p className="text-xl text-gray-700">Copy 60+ weather symbols including sun ☀, clouds ☁, rain ☔, snow ❄, moon phases, rainbows 🌈, and atmospheric effects. Perfect for weather apps, forecasts, and climate content.</p>
         </header>
 
         {/* Sun Symbols Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">☀ ☼ 🌤 Sun Symbols</h2>
+            <h2 className="text-3xl font-bold text-gray-900">☀ ☼ 🌤 Sun Symbols</h2>
             <span className="text-sm bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full">{sunSymbols.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">Bright sun symbols for clear weather and sunny days</p>
+          <p className="text-gray-600 mb-6">Bright sun symbols for clear weather and sunny days</p>
           <CopyGrid items={sunSymbols} />
         </section>
 
         {/* Cloud Symbols Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">☁ 🌥 🌦 Cloud Symbols</h2>
-            <span className="text-sm bg-white text-[#8B95A1] px-3 py-1 rounded-full">{cloudSymbols.length} symbols</span>
+            <h2 className="text-3xl font-bold text-gray-900">☁ 🌥 🌦 Cloud Symbols</h2>
+            <span className="text-sm bg-gray-100 text-gray-700 px-3 py-1 rounded-full">{cloudSymbols.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">Cloud symbols representing partly cloudy, overcast, and stormy conditions</p>
+          <p className="text-gray-600 mb-6">Cloud symbols representing partly cloudy, overcast, and stormy conditions</p>
           <CopyGrid items={cloudSymbols} />
         </section>
 
         {/* Rain Symbols Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">☔ 💧 🌧 Rain Symbols</h2>
+            <h2 className="text-3xl font-bold text-gray-900">☔ 💧 🌧 Rain Symbols</h2>
             <span className="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">{rainSymbols.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">Rain and water drop symbols for rainy weather conditions</p>
+          <p className="text-gray-600 mb-6">Rain and water drop symbols for rainy weather conditions</p>
           <CopyGrid items={rainSymbols} />
         </section>
 
         {/* Snow Symbols Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">❄ ☃ 🌨 Snow Symbols</h2>
+            <h2 className="text-3xl font-bold text-gray-900">❄ ☃ 🌨 Snow Symbols</h2>
             <span className="text-sm bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full">{snowSymbols.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">Snowflake and snow symbols for winter weather conditions</p>
+          <p className="text-gray-600 mb-6">Snowflake and snow symbols for winter weather conditions</p>
           <CopyGrid items={snowSymbols} />
         </section>
 
         {/* Wind Symbols Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">🌬 💨 Wind Symbols</h2>
+            <h2 className="text-3xl font-bold text-gray-900">🌬 💨 Wind Symbols</h2>
             <span className="text-sm bg-sky-100 text-sky-700 px-3 py-1 rounded-full">{windSymbols.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">Wind and breeze symbols for windy conditions</p>
+          <p className="text-gray-600 mb-6">Wind and breeze symbols for windy conditions</p>
           <CopyGrid items={windSymbols} />
         </section>
 
         {/* Moon & Stars Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">🌙 🌛 ⭐ Moon & Stars</h2>
+            <h2 className="text-3xl font-bold text-gray-900">🌙 🌛 ⭐ Moon & Stars</h2>
             <span className="text-sm bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full">{moonStars.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">Moon phases and star symbols for night sky representation</p>
+          <p className="text-gray-600 mb-6">Moon phases and star symbols for night sky representation</p>
           <CopyGrid items={moonStars} />
         </section>
 
         {/* Water Elements Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">🌊 💧 🌈 Water & Rainbows</h2>
-            <span className="text-sm bg-[rgba(var(--accent-rgb),0.12)] text-[var(--accent)] px-3 py-1 rounded-full">{waterElements.length} symbols</span>
+            <h2 className="text-3xl font-bold text-gray-900">🌊 💧 🌈 Water & Rainbows</h2>
+            <span className="text-sm bg-purple-100 text-purple-700 px-3 py-1 rounded-full">{waterElements.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">Water, waves, and rainbow symbols for oceanic and atmospheric elements</p>
+          <p className="text-gray-600 mb-6">Water, waves, and rainbow symbols for oceanic and atmospheric elements</p>
           <CopyGrid items={waterElements} />
         </section>
 
         {/* Special Weather Section */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-3xl font-bold text-gray-100">☄ 🌡 🔥 Special Weather</h2>
+            <h2 className="text-3xl font-bold text-gray-900">☄ 🌡 🔥 Special Weather</h2>
             <span className="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full">{specialWeather.length} symbols</span>
           </div>
-          <p className="text-[#8B95A1] mb-6">Specialized weather symbols including comet, temperature, and fire</p>
+          <p className="text-gray-600 mb-6">Specialized weather symbols including comet, temperature, and fire</p>
           <CopyGrid items={specialWeather} />
         </section>
 
         {/* SEO Content */}
         <section className="mt-20 bg-gradient-to-r from-cyan-50 to-blue-50 p-8 rounded-lg">
-          <h2 className="text-2xl font-bold text-gray-100 mb-6">About Weather Symbols</h2>
-          <div className="text-[#8B95A1] space-y-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">About Weather Symbols</h2>
+          <div className="text-gray-700 space-y-4">
             <p>
               Weather symbols are expressive Unicode characters representing atmospheric conditions, celestial bodies, and climate elements. Our collection of 60+ weather symbols covers sun ☀, clouds ☁, rain ☔, snow ❄, moon phases 🌙, stars ⭐, wind 🌬, and special weather phenomena.
             </p>
@@ -136,8 +136,8 @@ export default function WeatherPage() {
 
         {/* Quick Tips Section */}
         <section className="mt-12 bg-gradient-to-r from-blue-50 to-cyan-50 p-8 rounded-lg">
-          <h2 className="text-2xl font-bold text-gray-100 mb-4">Tips for Using Weather Symbols</h2>
-          <ul className="text-[#8B95A1] space-y-3">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Tips for Using Weather Symbols</h2>
+          <ul className="text-gray-700 space-y-3">
             <li className="flex gap-3">
               <span className="text-cyan-600 font-bold">☀</span>
               <span><strong>Copy with one click:</strong> Click any weather symbol to instantly copy it to your clipboard</span>

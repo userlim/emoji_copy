@@ -31,45 +31,45 @@ export default function ChessPage() {
   ]
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50 py-8">
+    <main className="min-h-screen py-8">
       <CategoryNav current="/chess" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-2 text-gray-100">
+        <h1 className="text-4xl font-bold text-center mb-2 text-gray-900">
           Chess Symbols Copy and Paste
         </h1>
-        <p className="text-center text-[#8B95A1] mb-12">
+        <p className="text-center text-gray-600 mb-12">
           Discover and copy chess piece symbols and game symbols for chess notation and discussions
         </p>
 
         <div className="space-y-12">
           {/* White Pieces Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">♔ White Pieces</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">♔ White Pieces</h2>
             <CopyGrid items={whitePieces} />
           </section>
 
           {/* Black Pieces Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">♚ Black Pieces</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">♚ Black Pieces</h2>
             <CopyGrid items={blackPieces} />
           </section>
 
           {/* Game Symbols Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">🏆 Game & Board Symbols</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">🏆 Game & Board Symbols</h2>
             <CopyGrid items={gameSymbols} />
           </section>
 
           {/* Chess Pieces Reference */}
           <section>
-            <h2 className="text-2xl font-bold mb-6 text-gray-200">♔ Chess Piece Reference</h2>
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">♔ Chess Piece Reference</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-4">
               {chessPieces.map((piece) => (
-                <div key={piece.name} className="bg-white/[0.03] rounded-lg p-4 border border-[#F2F4F6] text-center">
+                <div key={piece.name} className="bg-white rounded-lg p-4 border border-gray-200 text-center">
                   <div className="text-3xl mb-1">{piece.symbol}</div>
-                  <div className="text-sm font-bold text-gray-100">{piece.name}</div>
-                  <div className="text-xs text-[#4E5968]">{piece.piece}</div>
+                  <div className="text-sm font-bold text-gray-900">{piece.name}</div>
+                  <div className="text-xs text-gray-500">{piece.piece}</div>
                 </div>
               ))}
             </div>
@@ -78,9 +78,9 @@ export default function ChessPage() {
         </div>
 
         {/* SEO Content */}
-        <section className="mt-16 bg-white/[0.03] rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-100">Chess Symbols Copy and Paste Guide</h2>
-          <div className="prose prose-sm max-w-none text-[#8B95A1] space-y-4">
+        <section className="mt-16 bg-white rounded-lg shadow-sm p-8">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900">Chess Symbols Copy and Paste Guide</h2>
+          <div className="prose prose-sm max-w-none text-gray-700 space-y-4">
             <p>
               Chess symbols are Unicode characters representing the pieces and elements of chess. These symbols are perfect for chess notation, game analysis, and chess-related content. Each symbol represents a specific chess piece with distinct movement rules and strategic importance.
             </p>

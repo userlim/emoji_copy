@@ -35,17 +35,17 @@ export default function CopyGrid({ items, columns }: CopyGridProps) {
   return (
     <>
       {copied && (
-        <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-gray-900 text-[#191F28] px-5 py-2.5 rounded-xl text-sm font-semibold shadow-lg flex items-center gap-2">
+        <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-gray-900 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-lg flex items-center gap-2">
           <span className="text-xl">{copied}</span> Copied!
         </div>
       )}
       {recent.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-xs font-bold text-[#8B95A1] mb-2 uppercase tracking-widest">Recently Copied</h2>
+          <h2 className="text-xs font-bold text-gray-400 mb-2 uppercase tracking-widest">Recently Copied</h2>
           <div className="flex flex-wrap gap-1">
             {recent.slice(0, 20).map((s, i) => (
               <button key={i} onClick={() => handleCopy(s)}
-                className="w-10 h-10 flex items-center justify-center text-xl rounded-lg bg-white/[0.02] hover:bg-white/[0.04] active:scale-90 transition-all">{s}</button>
+                className="w-10 h-10 flex items-center justify-center text-xl rounded-lg bg-gray-50 hover:bg-gray-100 active:scale-90 transition-all">{s}</button>
             ))}
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function CopyGrid({ items, columns }: CopyGridProps) {
       <div className="grid gap-1" style={{ gridTemplateColumns: gridCols }}>
         {items.map((sym, i) => (
           <button key={i} onClick={() => handleCopy(sym)}
-            className={`flex items-center justify-center rounded-lg hover:bg-white/[0.04] active:scale-90 transition-all cursor-pointer border border-transparent hover:border-[#E5E8EB] ${
+            className={`flex items-center justify-center rounded-lg hover:bg-gray-100 active:scale-90 transition-all cursor-pointer border border-transparent hover:border-gray-200 ${
               isWide ? 'py-2 px-2 text-sm' : 'aspect-square text-2xl'
             }`}
             title={`Copy ${sym}`}

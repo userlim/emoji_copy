@@ -19,39 +19,39 @@ const checkmarkSymbols = [
 
 export default function CheckMarksPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50 py-12">
+    <main className="min-h-screen py-12">
       <CategoryNav current="/check-marks" />
 
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12">
-          <h1 className="text-5xl font-bold text-gray-100 mb-4">Check Mark & Tick Symbols</h1>
-          <p className="text-xl text-[#8B95A1]">Copy and paste check marks, tick symbols, crosses, and validation symbols. Use them in lists, forms, documents, and more.</p>
+          <h1 className="text-5xl font-bold text-gray-900 mb-4">Check Mark & Tick Symbols</h1>
+          <p className="text-xl text-gray-700">Copy and paste check marks, tick symbols, crosses, and validation symbols. Use them in lists, forms, documents, and more.</p>
         </div>
 
-        <div className="bg-white/[0.03] rounded-lg shadow-md p-8">
-          <h2 className="text-2xl font-bold text-gray-100 mb-6">All Check Mark Symbols</h2>
+        <div className="bg-white rounded-lg shadow-md p-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">All Check Mark Symbols</h2>
           <CopyGrid items={checkmarkSymbols} />
         </div>
 
         {/* FAQ Section */}
-        <div className="mt-16 bg-white/[0.03] rounded-lg shadow-md p-8">
-          <h2 className="text-2xl font-bold text-gray-100 mb-6">Frequently Asked Questions</h2>
+        <div className="mt-16 bg-white rounded-lg shadow-md p-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
           <div className="space-y-6">
             <div>
-              <h3 className="text-lg font-semibold text-gray-100 mb-2">What's the difference between ✓ and ✔?</h3>
-              <p className="text-[#8B95A1]">Both are check mark symbols but have slightly different styles. ✓ is a lighter tick mark while ✔ is a heavier, more prominent check mark. Both serve the same purpose.</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">What's the difference between ✓ and ✔?</h3>
+              <p className="text-gray-700">Both are check mark symbols but have slightly different styles. ✓ is a lighter tick mark while ✔ is a heavier, more prominent check mark. Both serve the same purpose.</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-100 mb-2">Which check mark should I use in documents?</h3>
-              <p className="text-[#8B95A1]">For professional documents, ✓ or ✔ work well. For digital forms and applications, ✅ (emoji) is more visually appealing and widely supported.</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Which check mark should I use in documents?</h3>
+              <p className="text-gray-700">For professional documents, ✓ or ✔ work well. For digital forms and applications, ✅ (emoji) is more visually appealing and widely supported.</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-100 mb-2">Can I use check marks in spreadsheets?</h3>
-              <p className="text-[#8B95A1]">Yes! All check mark symbols can be used in spreadsheets like Excel and Google Sheets for marking completed items or yes/no columns.</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Can I use check marks in spreadsheets?</h3>
+              <p className="text-gray-700">Yes! All check mark symbols can be used in spreadsheets like Excel and Google Sheets for marking completed items or yes/no columns.</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-100 mb-2">What's the difference between check marks and crosses?</h3>
-              <p className="text-[#8B95A1]">Check marks (✓, ✔, ✅) indicate approval or completion. Crosses (✗, ✘, ❌) indicate rejection, disapproval, or incomplete items.</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">What's the difference between check marks and crosses?</h3>
+              <p className="text-gray-700">Check marks (✓, ✔, ✅) indicate approval or completion. Crosses (✗, ✘, ❌) indicate rejection, disapproval, or incomplete items.</p>
             </div>
           </div>
         </div>

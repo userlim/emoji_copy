@@ -22,59 +22,59 @@ export default function TextFacesPage() {
   const actionFaces = 'ᕕ( ᐛ )ᕗ ᕦ(ò_óˇ)ᕤ (ノ◕ヮ◕)ノ*:・゚✧ ⊂(◉‿◉)つ ε=ε=ε=┌(;*´Д`)ﾉ ヾ(⌐■_■)ノ♪ 〜(꒪꒳꒪)〜 ♪♪♪'.split(' ')
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-50 py-8">
+    <main className="min-h-screen py-8">
       <CategoryNav current="/text-faces" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-2 text-gray-100">
+        <h1 className="text-4xl font-bold text-center mb-2 text-gray-900">
           Kaomoji Text Faces Copy and Paste
         </h1>
-        <p className="text-center text-[#8B95A1] mb-12">
+        <p className="text-center text-gray-600 mb-12">
           Discover and copy 80+ expressive kaomoji text faces for your messages
         </p>
 
         <div className="space-y-12">
           {/* Happy Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">😊 Happy & Cheerful Faces</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">😊 Happy & Cheerful Faces</h2>
             <CopyGrid items={happyFaces} columns="repeat(auto-fill, minmax(160px, 1fr))" />
           </section>
 
           {/* Sad Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">😢 Sad & Crying Faces</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">😢 Sad & Crying Faces</h2>
             <CopyGrid items={sadFaces} columns="repeat(auto-fill, minmax(160px, 1fr))" />
           </section>
 
           {/* Angry Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">😠 Angry & Upset Faces</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">😠 Angry & Upset Faces</h2>
             <CopyGrid items={angryFaces} columns="repeat(auto-fill, minmax(160px, 1fr))" />
           </section>
 
           {/* Shrug Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">🤷 Shrug & Confused Faces</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">🤷 Shrug & Confused Faces</h2>
             <CopyGrid items={shrugFaces} columns="repeat(auto-fill, minmax(160px, 1fr))" />
           </section>
 
           {/* Love Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">💕 Love & Affection Faces</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">💕 Love & Affection Faces</h2>
             <CopyGrid items={loveFaces} columns="repeat(auto-fill, minmax(160px, 1fr))" />
           </section>
 
           {/* Action Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">🎉 Action & Celebration Faces</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">🎉 Action & Celebration Faces</h2>
             <CopyGrid items={actionFaces} columns="repeat(auto-fill, minmax(160px, 1fr))" />
           </section>
         </div>
 
         {/* SEO Content */}
-        <section className="mt-16 bg-white/[0.03] rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-100">Kaomoji Text Faces Copy and Paste Guide</h2>
-          <div className="prose prose-sm max-w-none text-[#8B95A1] space-y-4">
+        <section className="mt-16 bg-white rounded-lg shadow-sm p-8">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900">Kaomoji Text Faces Copy and Paste Guide</h2>
+          <div className="prose prose-sm max-w-none text-gray-700 space-y-4">
             <p>
               Kaomoji are Japanese text emoticons that express emotions and feelings using ASCII characters and Unicode symbols. They are perfect for adding personality and expression to your text messages when traditional emojis aren't available.
             </p>

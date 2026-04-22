@@ -16,41 +16,41 @@ export default function AnimalsPage() {
   const seaEmojis = '🐙 🦑 🦐 🦞 🦀 🪼 🐡 🐠 🐟 🐬 🐳 🐋 🦈 🐊 🐢 🦭 🦦'.split(' ')
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 py-8">
+    <main className="min-h-screen py-8">
       <CategoryNav current="/animals" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-2 text-gray-100">
+        <h1 className="text-4xl font-bold text-center mb-2 text-gray-900">
           Animal Emoji Copy and Paste
         </h1>
-        <p className="text-center text-[#8B95A1] mb-12">
+        <p className="text-center text-gray-600 mb-12">
           Discover and copy 150+ animal emojis including pets, bugs, sea creatures, and more
         </p>
 
         <div className="space-y-12">
           {/* Pets Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">🐾 Pets & Land Animals</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">🐾 Pets & Land Animals</h2>
             <CopyGrid items={petEmojis} />
           </section>
 
           {/* Bugs Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">🪲 Bugs & Insects</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">🪲 Bugs & Insects</h2>
             <CopyGrid items={bugEmojis} />
           </section>
 
           {/* Sea Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">🌊 Sea Creatures</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">🌊 Sea Creatures</h2>
             <CopyGrid items={seaEmojis} />
           </section>
         </div>
 
         {/* SEO Content */}
-        <section className="mt-16 bg-white/[0.03] rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-100">Animal Emoji Copy and Paste Guide</h2>
-          <div className="prose prose-sm max-w-none text-[#8B95A1] space-y-4">
+        <section className="mt-16 bg-white rounded-lg shadow-sm p-8">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900">Animal Emoji Copy and Paste Guide</h2>
+          <div className="prose prose-sm max-w-none text-gray-700 space-y-4">
             <p>
               Animal emojis are perfect for expressing your love for pets, wildlife, and nature. Whether you're texting about your cute dog 🐶, favorite cat 🐱, or a sea adventure 🐋, we've got all the animal emojis you need.
             </p>

@@ -16,41 +16,41 @@ export default function TravelPage() {
   const flagEmojis = '🏁 🚩 🎌 🏴 🏳 🏳️‍🌈 🏳️‍⚧️ 🏴‍☠️'.split(' ')
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-cyan-50 to-blue-50 py-8">
+    <main className="min-h-screen py-8">
       <CategoryNav current="/travel" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-2 text-gray-100">
+        <h1 className="text-4xl font-bold text-center mb-2 text-gray-900">
           Travel & Transport Emoji Copy and Paste
         </h1>
-        <p className="text-center text-[#8B95A1] mb-12">
+        <p className="text-center text-gray-600 mb-12">
           Discover and copy 100+ travel and transport emojis for your adventures
         </p>
 
         <div className="space-y-12">
           {/* Vehicles Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">🚗 Vehicles & Transportation</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">🚗 Vehicles & Transportation</h2>
             <CopyGrid items={vehicleEmojis} />
           </section>
 
           {/* Places Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">🏛 Places & Landmarks</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">🏛 Places & Landmarks</h2>
             <CopyGrid items={placeEmojis} />
           </section>
 
           {/* Flags Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">🏁 Flags & Symbols</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">🏁 Flags & Symbols</h2>
             <CopyGrid items={flagEmojis} />
           </section>
         </div>
 
         {/* SEO Content */}
-        <section className="mt-16 bg-white/[0.03] rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-100">Travel and Transport Emoji Copy and Paste Guide</h2>
-          <div className="prose prose-sm max-w-none text-[#8B95A1] space-y-4">
+        <section className="mt-16 bg-white rounded-lg shadow-sm p-8">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900">Travel and Transport Emoji Copy and Paste Guide</h2>
+          <div className="prose prose-sm max-w-none text-gray-700 space-y-4">
             <p>
               Travel and transport emojis are perfect for sharing your adventures, planning trips, and expressing your love for exploration. Whether you're flying ✈️, driving 🚗, or exploring the world 🌍, we have the emojis you need.
             </p>

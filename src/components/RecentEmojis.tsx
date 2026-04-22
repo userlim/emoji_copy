@@ -28,23 +28,23 @@ export default function RecentEmojis() {
 
   return (
     <section className="mb-8">
-      <h2 className="text-sm font-bold text-[#8B95A1] uppercase tracking-widest mb-3">
+      <h2 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-3">
         Recently Used
       </h2>
       {copied && (
-        <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-gray-900 text-[#191F28] px-5 py-2.5 rounded-xl text-sm font-semibold shadow-lg flex items-center gap-2">
+        <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-gray-900 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-lg flex items-center gap-2">
           <span className="text-xl">{copied}</span> Copied!
         </div>
       )}
       <div
-        className="flex flex-wrap gap-1.5 p-4 rounded-2xl bg-white/[0.03]"
+        className="flex flex-wrap gap-1.5 p-4 rounded-2xl bg-white"
         style={{ border: '1.5px solid var(--card-border)' }}
       >
         {recent.map((sym, i) => (
           <button
             key={`recent-${i}`}
             onClick={() => handleCopy(sym)}
-            className="w-11 h-11 flex items-center justify-center text-2xl rounded-lg hover:bg-white/[0.04] active:scale-90 transition-all cursor-pointer"
+            className="w-11 h-11 flex items-center justify-center text-2xl rounded-lg hover:bg-gray-100 active:scale-90 transition-all cursor-pointer"
             title={`Copy ${sym}`}
           >
             {sym}

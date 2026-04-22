@@ -26,43 +26,43 @@ const mathSymbols = {
 
 export default function MathPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 py-12">
+    <main className="min-h-screen py-12">
       <CategoryNav current="/math" />
 
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12">
-          <h1 className="text-5xl font-bold text-gray-100 mb-4">Mathematical Symbols</h1>
-          <p className="text-xl text-[#8B95A1]">Copy and paste mathematical symbols for algebra, calculus, set theory, logic, and more. Perfect for scientific writing, equations, and technical documents.</p>
+          <h1 className="text-5xl font-bold text-gray-900 mb-4">Mathematical Symbols</h1>
+          <p className="text-xl text-gray-700">Copy and paste mathematical symbols for algebra, calculus, set theory, logic, and more. Perfect for scientific writing, equations, and technical documents.</p>
         </div>
 
         <div className="space-y-12">
           {Object.entries(mathSymbols).map(([category, symbols]) => (
-            <div key={category} className="bg-white/[0.03] rounded-lg shadow-md p-8">
-              <h2 className="text-2xl font-bold text-gray-100 mb-6">{category}</h2>
+            <div key={category} className="bg-white rounded-lg shadow-md p-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">{category}</h2>
               <CopyGrid items={symbols} />
             </div>
           ))}
         </div>
 
         {/* FAQ Section */}
-        <div className="mt-16 bg-white/[0.03] rounded-lg shadow-md p-8">
-          <h2 className="text-2xl font-bold text-gray-100 mb-6">Frequently Asked Questions</h2>
+        <div className="mt-16 bg-white rounded-lg shadow-md p-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
           <div className="space-y-6">
             <div>
-              <h3 className="text-lg font-semibold text-gray-100 mb-2">Can I use math symbols in Microsoft Word?</h3>
-              <p className="text-[#8B95A1]">Yes, all these mathematical symbols can be pasted directly into Word documents. Some may require specific fonts for proper display, but most are universally supported.</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Can I use math symbols in Microsoft Word?</h3>
+              <p className="text-gray-700">Yes, all these mathematical symbols can be pasted directly into Word documents. Some may require specific fonts for proper display, but most are universally supported.</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-100 mb-2">Are these symbols better than using LaTeX?</h3>
-              <p className="text-[#8B95A1]">These Unicode symbols are great for simple equations and documents. For complex mathematical typesetting, LaTeX is still the professional standard, but Unicode symbols work well for quick notation.</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Are these symbols better than using LaTeX?</h3>
+              <p className="text-gray-700">These Unicode symbols are great for simple equations and documents. For complex mathematical typesetting, LaTeX is still the professional standard, but Unicode symbols work well for quick notation.</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-100 mb-2">What's the difference between × and *?</h3>
-              <p className="text-[#8B95A1]">× is the proper multiplication symbol for mathematical notation. The asterisk (*) is typically used in programming and spreadsheets. For formal mathematics, use ×.</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">What's the difference between × and *?</h3>
+              <p className="text-gray-700">× is the proper multiplication symbol for mathematical notation. The asterisk (*) is typically used in programming and spreadsheets. For formal mathematics, use ×.</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-100 mb-2">Can I use Greek letters in email?</h3>
-              <p className="text-[#8B95A1]">Yes, Greek letters are standard Unicode characters and work in all email clients and applications. They may display slightly differently depending on the font, but are universally supported.</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Can I use Greek letters in email?</h3>
+              <p className="text-gray-700">Yes, Greek letters are standard Unicode characters and work in all email clients and applications. They may display slightly differently depending on the font, but are universally supported.</p>
             </div>
           </div>
         </div>

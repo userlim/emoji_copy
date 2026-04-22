@@ -18,47 +18,47 @@ export default function FoodPage() {
   const drinkEmojis = '☕ 🍵 🧋 🥤 🍺 🍻 🥂 🍷 🍸 🍹 🧃 🥛 🫗 🍼 🧊 🥃 🍶 🫖 🧉'.split(' ')
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 py-8">
+    <main className="min-h-screen py-8">
       <CategoryNav current="/food" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-2 text-gray-100">
+        <h1 className="text-4xl font-bold text-center mb-2 text-gray-900">
           Food & Drink Emoji Copy and Paste
         </h1>
-        <p className="text-center text-[#8B95A1] mb-12">
+        <p className="text-center text-gray-600 mb-12">
           Discover and copy 150+ food and drink emojis for every meal and occasion
         </p>
 
         <div className="space-y-12">
           {/* Fruits Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">🍎 Fruits</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">🍎 Fruits</h2>
             <CopyGrid items={fruitEmojis} />
           </section>
 
           {/* Vegetables Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">🥦 Vegetables</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">🥦 Vegetables</h2>
             <CopyGrid items={vegetableEmojis} />
           </section>
 
           {/* Fast Food Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">🍕 Fast Food & Meals</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">🍕 Fast Food & Meals</h2>
             <CopyGrid items={fastFoodEmojis} />
           </section>
 
           {/* Drinks Section */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-200">☕ Drinks & Beverages</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">☕ Drinks & Beverages</h2>
             <CopyGrid items={drinkEmojis} />
           </section>
         </div>
 
         {/* SEO Content */}
-        <section className="mt-16 bg-white/[0.03] rounded-lg shadow-sm p-8">
-          <h2 className="text-2xl font-bold mb-4 text-gray-100">Food and Drink Emoji Copy and Paste Guide</h2>
-          <div className="prose prose-sm max-w-none text-[#8B95A1] space-y-4">
+        <section className="mt-16 bg-white rounded-lg shadow-sm p-8">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900">Food and Drink Emoji Copy and Paste Guide</h2>
+          <div className="prose prose-sm max-w-none text-gray-700 space-y-4">
             <p>
               Food and drink emojis are essential for expressing your culinary interests and dining experiences. Whether you're sharing a pizza 🍕, coffee ☕, or sushi 🍣, we have the perfect emoji for every food situation.
             </p>
